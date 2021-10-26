@@ -27,6 +27,6 @@ category: C/C++
 <br/>
 <br/>
 
-> 코딩 연슥 사이트  
+> 코딩 연습 사이트  
 
 프로그래머스: [https://programmers.co.kr/](https://programmers.co.kr/)  
