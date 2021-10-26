@@ -254,7 +254,6 @@ header.post-header {
 	padding: 50px 0px 10px 0px;
 	margin-bottom: 30px;
 	border-bottom: 1px solid #ccc;
-	text-align: center;
 }
 
 header.home {
@@ -264,7 +263,7 @@ header.home {
 .post-title {
 	font-size: 1.5em;
 	color: #111;
-	font-weight: bold;
+	font-weight: bold;	
 }
 
 .post-date {
