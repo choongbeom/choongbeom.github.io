@@ -264,6 +264,7 @@ header.home {
 	font-size: 1.5em;
 	color: #111;
 	font-weight: bold;	
+	text-align: left;
 }
 
 .post-date {
