@@ -9,7 +9,7 @@ category: JavaScript
 
 <br/>
 
-```javascript
+```html
 <!DOCTYPE HTML>
 <html>
 <body>
