@@ -7,8 +7,6 @@ category: C/C++
 
 > 회고록
 
-<br/>
-
 13년간 C/C++ 사용을 하면서 정리를 해야 된다는 것을 알면서도 아직까지도 정리를 못하고 있습니다.  
 첫 회사 메인 개발 언어는 C++있었지만 체계적으로 배우고 학습하지 못해 C, C++를 혼합해서 사용하곤 했습니다.  
 지금 생각해보면 업무에 치여 자기계발에 너무 소홀했던게 아닌가 싶습니다.  
@@ -20,5 +18,15 @@ category: C/C++
 저도 종종 참고하는 사이트 입니다.  
 
 <br/>
+<br/>
 
-모두의 코드: [https://modoocode.com/](https://modoocode.com/)
+> 강좌 사이트  
+
+모두의 코드: [https://modoocode.com/](https://modoocode.com/)  
+
+<br/>
+<br/>
+
+> 코딩 연슥 사이트  
+
+프로그래머스: [https://programmers.co.kr/](https://programmers.co.kr/)  
