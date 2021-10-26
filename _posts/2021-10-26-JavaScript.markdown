@@ -18,5 +18,4 @@ category: JavaScript
   </script>
 </body>
 </html>
-
 ```
