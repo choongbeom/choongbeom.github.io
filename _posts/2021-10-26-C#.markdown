@@ -1,0 +1,30 @@
+---
+layout: post
+title: C#
+date: 2021-10-26 10:31 +0900
+category: C#
+---
+
+> C# 자료
+
+<br/>
+
+```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace Hello_World
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+
+```
