@@ -9,7 +9,7 @@ category: C/C++
 
 <br/>
 
-```
+```c++
 #include <studio.h>
 
 void main()

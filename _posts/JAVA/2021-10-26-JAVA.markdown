@@ -9,7 +9,7 @@ category: JAVA
 
 <br/>
 
-```
+```java
 package Mypackage;
  
 public class HelloWorld {
