@@ -1,21 +1,22 @@
 ---
 layout: post
-title: JAVA
-date: 2021-10-26 08:39 +0900
-category: JAVA
+title: JavaScript
+date: 2021-10-26 08:50 +0900
+category: JavaScript
 ---
-# JAVA
-> JAVA 자료
 
-This is code
+> JavaScript 자료
+
+<br/>
+
 ```ruby
-package Mypackage;
- 
-public class HelloWorld {
- 
-    public static void main(String[] args) {     
-        System.out.println("hello world!!");
-    }
-}
+<!DOCTYPE HTML>
+<html>
+<body>
+  <script>
+    alert( 'Hello, world!' );
+  </script>
+</body>
+</html>
 
 ```

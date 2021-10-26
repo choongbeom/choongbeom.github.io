@@ -4,11 +4,12 @@ title: C/C++
 date: 2021-10-26 08:31 +0900
 category: C/C++
 ---
-# C/C++
+
 > C/C++ 자료
 
-This is code
-```ruby
+<br/>
+
+```
 #include <studio.h>
 
 void main()
