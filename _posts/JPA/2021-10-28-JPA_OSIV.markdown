@@ -1,0 +1,13 @@
+---
+layout: post
+title: OSIV
+date: 2021-10-28 11:04 +0900
+category: JPA
+---
+
+> OSIV
+Open-In-View 또는 Open-Session-In-View 또는 Open-EntityManager-In-View  
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
+<br/>
