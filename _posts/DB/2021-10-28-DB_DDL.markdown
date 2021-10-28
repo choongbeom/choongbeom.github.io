@@ -51,7 +51,6 @@ CREATE DOMAIN 도메인명 데이터_타입
 * ### CREATE TABLE  
 테이블(릴레이션)을 정의하는 명령문이다.  
 DB설계 단계에서는 테이블을 릴레이션이라고 부르고, 조작이나 검색 시에는 테이블이라고 부름.  
-
 ```
 CREATE TABLE 테이블명
 	(속성명 데이터_타입 [NOT NULL] ...
@@ -81,7 +80,6 @@ CREATE TABLE 테이블명
  
 * ### CREATE VIEW  
 뷰는 하나 이상의 기본 테이블로부터 유도되는 이름을 갖는 가상 테이블(Virtual Table)로, CREATE VIEW는 뷰를 정의하는 명령문이다.  
-
 ```
 CREATE VIEW 뷰명[(속성명 ...)]
 AS SELECT문;
@@ -90,7 +88,6 @@ AS SELECT문;
 
 * ### CREATE INDEX  
 인덱스는 검색을 빠르게 하기 위해 만든 보조적인 데이터 구조이며, CREATE INDEX는 인덱스를 정의하는 명령문이다.  
-
 ```
 CREATE [UNIQUE] INDEX <인덱스명>
 	ON 테이블명({속성명 [ASC | DESC] [,속성명 [ASC | DESC]]})
@@ -108,7 +105,6 @@ CREATE [UNIQUE] INDEX <인덱스명>
 * ### CREATE TRIGGER  
 트리거(TRIGGER)는 데이터베이스 시스템에서 데이터의 입력, 갱신, 삭제 등의 이벤트(event)가 발생할 때마다 자동적으로 수행되는 사용자 정의 프로시저이다.  
 트리거는 SQL의 제약조건 방법을 통해 명시할 수 없는 무결성 제약조건을 구현하고, 관련 테이블의 데이터를 일치시킬 때 주로 사용한다.  
-
 ```
 CREATE TRIGGER 트리거명 [동작시기 옵션][동작 옵션]ON 테이블명
 REFERENCING [NEW | OLD] TABLE AS 테이블명
@@ -133,7 +129,6 @@ WHEN 조건식
 
 * ### ALTER TABLE
 테이블에 대한 정의를 변경하는 명령문이다.  
-
 ```
 ALTER TABLE 테이블명 ADD 속성명 데이터_타입 [DEFAULT '기본값'];
 ALTER TABLE 테이블명 ALTER 속성명 [SET DEFAULT '기본값'];
@@ -147,7 +142,6 @@ ALTER TABLE 테이블명 DROP COLUMN 속성명 [CASCADE];
 
 * ### DROP
 스키마, 도메인, 테이블, 뷰, 인덱스, 트리거를 제거하는 명령문이다.  
-
 ```
 DROP SCHEMA 스키마명 [CASCADE | RESTRICT];
 DROP DOMAIN 도메인명 [CASCADE | RESTRICT];
