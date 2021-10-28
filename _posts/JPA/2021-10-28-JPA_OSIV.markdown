@@ -6,8 +6,16 @@ category: JPA
 ---
 
 > OSIV
-Open-In-View 또는 Open-Session-In-View 또는 Open-EntityManager-In-View  
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+* Open-In-View 또는 Open-Session-In-View 또는 Open-EntityManager-In-View를 관례상 OSIV라고 한다.  
+
+* true일 경우 영속성 컨텍스트가 트랜잭션 범위를 넘어선 레이어까지 살아있다.  
+    * Api라면 클라이언트에게 응답될 때까지, View라면 View가 렌더링될 때까지 영속성컨텍스트가 살아있다.  
+
+* ### OSIV = true
+![OSIV1](https://github.com/choongbeom/choongbeom.github.io/blob/dependabot/bundler/addressable-2.8.0/_posts/IMG/OSIV1.png)
+
+* ### OSIV = false
+![OSIV1](https://github.com/choongbeom/choongbeom.github.io/blob/dependabot/bundler/addressable-2.8.0/_posts/IMG/OSIV2.png)
 
 <br/>
