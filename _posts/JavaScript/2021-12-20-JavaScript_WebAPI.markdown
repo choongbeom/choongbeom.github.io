@@ -35,4 +35,6 @@ window.onpageshow = function (event) {
 ```
 콜백으로 넘겨지는 event파라메터의 속성 중 persisted가 true인 경우, BFCache로 부터 복원된 상태, 즉 뒤로가기 등으로 재진입한 상태임을 알수 있어 조금 더 정밀한 컨트롤이 가능하다.  
 
+<br>
+
 ### 출처: [https://programmingsummaries.tistory.com/380](https://programmingsummaries.tistory.com/380) [감성 프로그래밍]
