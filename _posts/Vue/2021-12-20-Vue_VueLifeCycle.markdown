@@ -19,7 +19,7 @@ category: Vue
 * ### Vue Life Cycle  
 ![Vue Life Cycle](https://github.com/choongbeom/choongbeom.github.io/blob/dependabot/bundler/addressable-2.8.0/_posts/IMG/vuelifecycle.png?raw=true)
 
-위 그림을 보면, 솔직히 아직 이해가 되지 않는다. 하지만 그림에서 붉은색으로 표시된 기능(?)은 Vue 개발 시 소스에서 많이 볼수가 있다.  
+그림에서 붉은색으로 표시된 기능(?)은 Vue 개발 시 소스에서 많이 볼수가 있다.  
 핵심적인 부분이라기 보다는 아마도 소스와 매칭되는 기능을 붉은색으로 표시한 것 같다.  
 
 이번에 특정 로직을 개선하는 업무를 맡아서 진행 하였는데 Store(Vuex)를 사용하는 부분에서 의도와 다르게 작동하여 문제가 발생하였다.  
