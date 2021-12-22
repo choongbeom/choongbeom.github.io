@@ -346,7 +346,7 @@ footer {
 		line-height: 1.5;
 	}
 	table thead th {
-		text-align: center;
+		text-align: left;
 		padding: 10px;
 		font-weight: bold;
 		vertical-align: top;
