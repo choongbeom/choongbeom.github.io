@@ -298,6 +298,9 @@ footer {
 	color: #ccc;
 }
 
+.utterances {
+  max-width: 100% !important;
+}
 
 @media (max-width: 576px) {
 	article {
@@ -364,3 +367,4 @@ footer {
 		border-bottom: 1px solid #ccc;
 	}
 }
+
