@@ -21,29 +21,6 @@
 	</div>
 </div>
 
-<!--
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title">Pages</li>
-	  <li>
-		<a class="nav-item" href="/">Home</a>
-	 </li>
-	  {% assign pages_list = site.pages %}
-	  {% for node in pages_list %}
-	    {% if node.title != null %}
-	      {% if node.layout == "page" %}
-	        <li>
-	        	<a class="nav-item" href="{{ node.url }}">
-	            	{{ node.title }}
-	            </a>
-	        </li>
-	      {% endif %}
-	    {% endif %}
-	  {% endfor %}
-	</ul>
-</div>
--->
-
 <div class="sidebar-item sidebar-nav">
   	<ul class="nav">
 			<li class="nav-title">Categories</li>
@@ -53,7 +30,7 @@
 				<span class="name">{{ category | first }}</span>
 				<span class="badge">{{ category | last | size }}</span>
 	    	</a>
- 		</li>
+ 			</li>
 	    {% endfor %}
 	  </nav>
 	</ul>
@@ -76,6 +53,6 @@ SimpleJekyllSearch({
      noResultsText: 'No results found',
      limit: 10000,
      fuzzy: false,
-     exclude: ['Welcome']
+     exclude: ['Home']
 });
 </script>
