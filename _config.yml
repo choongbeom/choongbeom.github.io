@@ -32,9 +32,18 @@ svg:
 highlighter-theme: monokai
 date_format: "%Y-%M-%D"
 plugins:
-  - jekyll-feed
+  #- jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
 category_dir: category/
 tag_dir: tag/
+
+### seo tag
+author: Choongbeom
+social:
+name: choongbeom kim
+links:
 
 # Exclude from processing.
 # The following items will not be processed, by default.
