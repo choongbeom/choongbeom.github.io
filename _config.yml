@@ -22,7 +22,7 @@ title: Choongbeom
 email: toonme@nate.com
 description: programming blog
 # baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://choongbeom.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://choongbeom.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: choongbeom
 highlighter: rouge
 svg:
