@@ -30,8 +30,8 @@ category: INFO
 
   * **클라우드 개발팀 매니저**(2021.07-현재)
     - 스타트업([라이트브라더스](https://wrightbrothers.kr/)) 웹사이트 개발
-    - 신규 서비스 개발 (시세조회)  
-    - 고객 경험을 향상을 위한 기능 개선 (상품구매리스트 무한스크롤 뒤로가기 이슈)  
+    - 신규 서비스 개발 (시세조회 - api/client/admin)  
+    - 고객 경험을 향상을 위한 기능 개선 (상품구매리스트 무한스크롤 뒤로가기 이슈 - client)  
 
   * **시스템 개발팀 책임연구원**(2014.10-2021.12)
     - TWAIN 기반 스캐너 인터페이스 SDK 개발, 약 20개 고객사(LGCNS, 에이텍에이피 등)에서 사용
@@ -80,3 +80,4 @@ CD, ATM, 정산기관련 자동화기기 개발업체
 ### **<span style="color:gray">Education</span>**
 
 * 2003.03 ~ 2010.02 부산동의대학교 멀티미디어공학과
+* 논문: [적외선 조명 카메라를 이용한 동공 마우스 시스템 (An Eye Mouse System Using an Infrared Illumination Camera)](https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=NPAP09751794&dbt=NPAP)
