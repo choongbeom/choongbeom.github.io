@@ -1,11 +1,9 @@
 ---
 layout: post
-title: INFO
+title: Profile
 date: 2021-10-26 07:00 +0900
 category: INFO
 ---
-
-> Profile  
 
 **13년 차, 끊임없이 노력하는 개발자 김충범입니다.**
 
@@ -15,7 +13,7 @@ category: INFO
 
 * **Channel**
 
-  **Blog: [https://choongbeom.github.io/](https://choongbeom.github.io/)**  
+  Blog: [https://choongbeom.github.io/](https://choongbeom.github.io/)  
   GitHub: [https://github.com/choongbeom/](https://github.com/choongbeom/)  
 
 * **Introduce**
@@ -23,66 +21,57 @@ category: INFO
   13년간 자동화 기기(CD, ATM, 정산기) 및 장비 연동 시스템(사전투표 본인확인기, 스캐너 등)에 관련된 다양한 개발업무(설계/개발/유지보수)를 진행하였습니다.  
   현재는 커머스사이트(라이트브라더스) 백엔드/프론트엔드 개발 업무를 진행하고 있습니다.   
 
----
-<br>
-
-> Work Experience
+### **<span style="color:gray">Work Experience</span>**
   
-#### [보임테크놀러지](https://voimtech.com/)
+* #### [보임테크놀러지](https://voimtech.com/)
 본인인증, 신분증스캐너, 캐논스캐너, 코닥스캐너, 페이퍼리스, 이미징시스템 전문업체  
 
-* **이커머스**(2021.07-현재)
+  * **이커머스**(2021.07-현재)
 
-  - 스타트업(라이트브라더스) 웹사이트 개발
-  - 신규 서비스 개발 및 기존 서비스 리라이팅 (시세조회, 마이페이지, 포인트)  
-  - 고객 경험을 향상을 위한 기능 개선 (상품구매리스트 무한스크롤 뒤로가기 이슈)  
+    - 스타트업([라이트브라더스](https://wrightbrothers.kr/)) 웹사이트 개발
+    - 신규 서비스 개발 및 기존 서비스 리라이팅 (시세조회, 마이페이지, 포인트)  
+    - 고객 경험을 향상을 위한 기능 개선 (상품구매리스트 무한스크롤 뒤로가기 이슈)  
 
-* **스캐너**(2014.10-2021.12)
+  * **스캐너**(2014.10-2021.12)
 
-  - TWAIN 기반 스캐너 인터페이스 SDK 개발
-  - 스캐너 TWAIN 인터페이스 튜닝
-  - 스캐너 관련 프로그램 개발
+    - TWAIN 기반 스캐너 인터페이스 SDK 개발
+    - 스캐너 TWAIN 인터페이스 튜닝
+    - 스캐너 관련 프로그램 개발
 
-* **본인인증**(2017.01-현재)
-  
-  - 선거관리 위원회 사전투표 시스템에서 본인확인장비 인터페이스 개발
-  - 행정안전부 본인인증 장비 인터페이스 개발
+  * **본인인증**(2017.01-현재)
+    
+    - 선거관리 위원회 사전투표 시스템에서 본인확인장비 인터페이스 개발
+    - 행정안전부 본인인증 장비 인터페이스 개발
 
-* **기타 개발**(2017.01-현재)
+  * **기타 개발**(2017.01-현재)
 
-  - 선거관리 위원회 잠정투표 프로그램 개발
-  - 선거관리 위원회 사전투표 체험용 프로그램 개발
+    - 선거관리 위원회 잠정투표 프로그램 개발
+    - 선거관리 위원회 사전투표 체험용 프로그램 개발
 
-#### [네오아이씨피](http://www.neotk.com/html/main.php/)
+* #### [네오아이씨피](http://www.neotk.com/html/main.php/)
 CD, ATM, 정산기관련 자동화기기 개발업체
 
-* **장비개발**(2020.02-2020.05)
-  - 신규 국/해외 CD/ATM/정산기 장비 개발
-  - 기존 국/해외 CD/ATM/정산기 장비 유지보수
-  - 자동화기 시스템(OS)과 장비 모듈간의 미들웨어 개발
+  * **장비개발**(2020.02-2020.05)
+    - 신규 국/해외 CD/ATM/정산기 장비 개발
+    - 기존 국/해외 CD/ATM/정산기 장비 유지보수
+    - 자동화기 시스템(OS)과 장비 모듈간의 미들웨어 개발
 
----
-<br>
+### **<span style="color:gray">Other Experience</span>**
 
-> Other Experience
-
-#### 개인팀 운영
+* #### 개인팀 운영
 3인 개발자로 팀을 구성하여 안드로이드 게임 개발 및 운영 
 
-* **[망치쾅쾅쾅](https://apkcombo.com/ko/mangchi-kwangkwangkwang/com.b2hsoft.HammerBBBPaid/)**(2013.12 ~ 2014.09)
-  - 아케이드 게임 시나리오 작성
-  - Unity3D를 이용하여 게임 디자인/개발
-  - 현재 운영하지 않음  
+  * **[망치쾅쾅쾅](https://apkcombo.com/ko/mangchi-kwangkwangkwang/com.b2hsoft.HammerBBBPaid/)**(2013.12 ~ 2014.09)
+    - 아케이드 게임 시나리오 작성
+    - Unity3D를 이용하여 게임 디자인/개발
+    - 현재 운영하지 않음  
 
-* **[산수의 모험](https://apkcombo.com/ko/the-adventures-of-arithmetic/com.b2hsoft.taoa/)**(2014.06 ~ 2014.09)
-  - 교육 게임 시나리오 작성
-  - Unity3D를 이용하여 게임 디자인/개발
-  - 현재 운영하지 않음
+  * **[산수의 모험](https://apkcombo.com/ko/the-adventures-of-arithmetic/com.b2hsoft.taoa/)**(2014.06 ~ 2014.09)
+    - 교육 게임 시나리오 작성
+    - Unity3D를 이용하여 게임 디자인/개발
+    - 현재 운영하지 않음
 
----
-<br>
-
-> Skill
+### **<span style="color:gray">Skill</span>**
 
 * Windows Application: C/C++, MFC, C#(Winfrom)
 * ~~Linux Application: C/C++, QT~~
@@ -91,9 +80,6 @@ CD, ATM, 정산기관련 자동화기기 개발업체
 * Database: MariaDB
 * ~~Android Application: Unity3D, C#~~
 
----
-<br>
-
-> Education
+### **<span style="color:gray">Education</span>**
 
 * 2003.03 ~ 2010.02 부산동의대학교 멀티미디어공학과
