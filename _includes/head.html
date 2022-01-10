@@ -10,7 +10,7 @@
 	<link rel="canonical" href="https://choongbeom.github.io/">
 	{% feed_meta %}
 	
-	{%- if Category -.environment == 'production' and site.google_analytics -%}
-		{%- include google-analytics.html -%}
-	{%- endif -%}
+	{% if Category -.environment == 'production' and site.google_analytics %}
+		{% include google-analytics.html %}
+	{% endif %}
 </head>
