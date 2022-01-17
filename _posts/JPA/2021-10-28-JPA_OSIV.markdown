@@ -17,7 +17,7 @@ category: JPA
 
 
 * ### OSIV = false
-![OSIV1](https://github.com/choongbeom/choongbeom.github.io/blob/master/addressable-2.8.0/_posts/IMG/OSIV2.png?raw=true)  
+![OSIV1](https://github.com/choongbeom/choongbeom.github.io/blob/master/_posts/IMG/OSIV2.png?raw=true)  
 
 
 * ### 정리
