@@ -43,6 +43,10 @@ wget https://aws-codedeploy-ap-northeast-2.s3.ap-northeast-2.amazonaws.com/lates
 chmod +x ./install
 sudo ./install auto
 sudo service codedeploy-agent status  
+
+# time-zone 변경
+timedatectl list-timezones | grep Seoul
+sudo timedatectl set-timezone Asia/Seoul
 ```
 
 * FTP를 통해서 jar파일 업로드 및 실행  
@@ -54,6 +58,7 @@ sudo service codedeploy-agent status
 	* 인스턴스의 가용영역을 포함해야함.  
 
 * RDS 생성 - MariaDB  
+	* time-zone 변경: 파라미터 그룹에서 타임존그룹을 생성하여 파라미터그룹 변경  
 
 * 보안그룹 설정  
 	* 인스턴스 보안그룹은 가용영역과 개발자만 접근가능하도록 설정  
