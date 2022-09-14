@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vue Life Cycle, Vuex의 구조
+title: React Life Cycle
 date: 2022-07-14 08:14 +0900
 category: React
 ---
