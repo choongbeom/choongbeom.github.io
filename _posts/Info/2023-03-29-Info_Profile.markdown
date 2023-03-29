@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Profile
-date: 2022-01-07 09:00 +0900
+date: 2023-03-29 09:00 +0900
 category: INFO
 ---
 
@@ -69,6 +69,10 @@ CD, ATM, 정산기관련 자동화기기 개발업체
     - 교육 게임 시나리오 작성
     - Unity3D를 이용하여 게임 디자인/개발
     - 현재 운영하지 않음
+
+### **<span style="color:gray">Career Description</span>**
+
+* #### [경력기술서](https://docs.google.com/viewer?url=https://github.com/choongbeom/profile/blob/master/careerdescription.pdf?raw=True)
 
 ### **<span style="color:gray">Skill</span>**
 
