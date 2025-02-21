@@ -7,9 +7,9 @@ category: INFO
 
 ### 16년 차 개발자, 다양한 경험과 유연한 사고를 가진 김충범입니다.
     
- Contact  | Info |
+|Contact  | Info |
 |----------|--------------------------------|
-| **Email** | toonme1@gmail.com / toonme@nate.com |
+| **Email** | toonme1@gmail.com or toonme@nate.com |
 | **Messenger** | KakaoTalk (toonme) |
 
 
