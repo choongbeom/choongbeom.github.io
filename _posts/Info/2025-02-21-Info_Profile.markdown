@@ -12,6 +12,7 @@ category: INFO
 | **Email** | toonme1@gmail.com / toonme@nate.com |
 | **Messenger** | KakaoTalk (toonme) |
 
+
 | Channel  | Link |
 |----------|--------------------------------|
 | **Blog**  | [choongbeom.github.io](https://choongbeom.github.io/) |
