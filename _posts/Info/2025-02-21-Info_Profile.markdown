@@ -17,14 +17,14 @@ category: INFO
 | **Blog**  | [choongbeom.github.io](https://choongbeom.github.io/) |
 | **GitHub** | [github.com/choongbeom](https://github.com/choongbeom/) |
 
-* **Introduce**
+### 📢 **<span style="color:gray">Introduce**
 
 **자동화 기기 및 본인확인 시스템 전문가**로, 16년간 개발 및 기획을 수행해 왔습니다.  
 금융권 및 공공기관을 대상으로 **본인확인 솔루션, 스캐너 시스템, 자동화 기기** 개발을 주로 담당했습니다.  
 스타트업 및 웹솔루션 개발 경험을 보유하고 있으며, **기획부터 개발, 유지보수까지 전 과정**을 수행해 왔습니다.
   
-### **<span style="color:gray">Work Experience</span>**
-  
+### 🚀 **<span style="color:gray">Work Experience**  
+
 ### 🏢 [보임테크놀러지](https://voimtech.com/)  
 본인인증, 신분증스캐너, 스캐너 솔루션 전문업체  
 
@@ -68,7 +68,7 @@ CD, ATM, 정산기관련 자동화기기 개발업체
 - **자동화 기기 미들웨어 개발** (기기 시스템과 모듈 연동)  
 - 금융권 및 공공기관 자동화 기기 소프트웨어 유지보수  
 
-### **<span style="color:gray">Other Experience</span>**
+### 🚀 **<span style="color:gray">Other Experience</span>**
 
 ### 🎮 3인 개발팀 운영 (2013.12 - 2014.09)  
 Unity3D 기반 **안드로이드 게임 2종 출시 및 운영**  
@@ -82,9 +82,7 @@ Unity3D 기반 **안드로이드 게임 2종 출시 및 운영**
 - 현재 운영 종료  
 
 
-### **<span style="color:gray">Skill</span>**
-
-### 💻 **Tech Stack**  
+### 💻 **<span style="color:gray">Tech Stack**  
 #### ✅ **현재 주력 기술**
 - **Windows Application:** C/C++, MFC, C#(Winform)  
 - **Back-End:** Java, Spring Boot, AWS  
