@@ -100,6 +100,8 @@ Unity3D 기반 **안드로이드 게임 2종 출시 및 운영**
 - **Linux Application:** C/C++, Qt  
 - **Android Application:** Unity3D, C#  
 
+---
+
 ### **<span style="color:gray">Education 및 Career Description</span>**
 
 ### 🎓 **Education**  
