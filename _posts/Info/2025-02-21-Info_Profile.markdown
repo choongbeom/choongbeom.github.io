@@ -18,12 +18,16 @@ category: INFO
 | **Blog**  | [choongbeom.github.io](https://choongbeom.github.io/) |
 | **GitHub** | [github.com/choongbeom](https://github.com/choongbeom/) |
 
+---
+
 ### 📢 **<span style="color:gray">Introduce</span>**
 
 **자동화 기기 및 본인확인 시스템 전문가**로, 16년간 개발 및 기획을 수행해 왔습니다.  
 금융권 및 공공기관을 대상으로 **본인확인 솔루션, 스캐너 시스템, 자동화 기기** 개발을 주로 담당했습니다.  
 스타트업 및 웹솔루션 개발 경험을 보유하고 있으며, **기획부터 개발, 유지보수까지 전 과정**을 수행해 왔습니다.
-  
+
+---
+
 ### 🚀 **<span style="color:gray">Work Experience</span>**  
 
 ### 🏢 [보임테크놀러지](https://voimtech.com/)  
@@ -59,8 +63,6 @@ category: INFO
 - **선거관리위원회 사전투표 본인확인기 및 선거관련 프로그램 개발**  
 - 본인확인 및 자동화 시스템 개발 및 유지보수  
 
----
-
 ### 🏢 [네오아이씨피](http://www.neotk.com/html/main.php/)  
 CD, ATM, 정산기관련 자동화기기 개발업체  
 
@@ -68,6 +70,8 @@ CD, ATM, 정산기관련 자동화기기 개발업체
 - **국내 및 해외 CD/ATM/정산기 신규 개발 및 유지보수**  
 - **자동화 기기 미들웨어 개발** (기기 시스템과 모듈 연동)  
 - 금융권 및 공공기관 자동화 기기 소프트웨어 유지보수  
+
+---
 
 ### 🚀 **<span style="color:gray">Other Experience</span>**
 
@@ -82,6 +86,7 @@ Unity3D 기반 **안드로이드 게임 2종 출시 및 운영**
 #### 📌 **산수의 모험** ([다운로드 링크](https://apkcombo.com/ko/the-adventures-of-arithmetic/com.b2hsoft.taoa/))  
 - 현재 운영 종료  
 
+---
 
 ### 💻 **<span style="color:gray">Tech Stack</span>**  
 #### ✅ **현재 주력 기술**
@@ -100,8 +105,6 @@ Unity3D 기반 **안드로이드 게임 2종 출시 및 운영**
 ### 🎓 **Education**  
 - **부산동의대학교 멀티미디어공학과** (2003.03 - 2010.02)  
 - **논문:** [적외선 조명 카메라를 이용한 동공 마우스 시스템](https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=NPAP09751794&dbt=NPAP)  
-
----
 
 ### 📄 **Career Description**  
 📌 **세부 경력 및 프로젝트 상세 내용은 아래 문서를 참고하세요.**  
