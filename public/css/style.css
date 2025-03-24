@@ -29,8 +29,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Roboto", "ChosunGu";
-  --font-family-serif: "ChosunGu";
+  --font-family-sans-serif: "Noto Sans KR", "Roboto", sans-serif;
+  --font-family-serif: "Gelasio", serif; /* 필요시만 사용 */
 }
 
 * {
@@ -49,7 +49,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: 'Gelasio', 'ChosunGu', serif;
+	font-family: "Noto Sans KR", "Roboto", sans-serif;
 	color: #2c3e50;
 }
 
@@ -229,7 +229,7 @@ article h3,
 article h4,
 article h5,
 article h6 {
-	font-family: "Roboto", "ChosunGu";
+	font-family:  "Noto Sans KR", "Roboto", sans-serif;
 	color: #333;
   	margin-bottom: 0;
 }
