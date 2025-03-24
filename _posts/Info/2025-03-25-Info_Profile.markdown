@@ -90,7 +90,7 @@ C++, C#, .NET, Java 기반의 응용프로그램 및 API 연동 개발에 능하
 - **부산 동의대학교 멀티미디어공학과** (2003.03 - 2010.02)  
 - **논문**: [적외선 조명 카메라를 이용한 동공 마우스 시스템](https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=NPAP09751794&dbt=NPAP)  
 - **자격증**: 정보처리기사 (2009년 취득)  
-- 📄 [경력기술서 보기 (PDF)](https://github.com/choongbeom/profile/blob/master/careerdescription.pdf?raw=True)
+
 ---
 
 ## 📫 Contact
@@ -100,3 +100,8 @@ C++, C#, .NET, Java 기반의 응용프로그램 및 API 연동 개발에 능하
 - **Blog**: [choongbeom.github.io](https://choongbeom.github.io)  
 - **GitHub**: [github.com/choongbeom](https://github.com/choongbeom)
 
+---
+
+- 📄 [경력기술서 보기 (PDF)](https://github.com/choongbeom/profile/blob/master/careerdescription.pdf?raw=True)
+
+---
