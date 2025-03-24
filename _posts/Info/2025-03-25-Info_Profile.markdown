@@ -102,6 +102,6 @@ C++, C#, .NET, Java 기반의 응용프로그램 및 API 연동 개발에 능하
 
 ---
 
-- 📄 [경력기술서 보기 (PDF)](https://github.com/choongbeom/profile/blob/master/careerdescription.pdf?raw=True)
+- 📄 [경력기술서 보기 (PDF)](https://docs.google.com/viewer?url=https://github.com/choongbeom/profile/blob/master/careerdescription.pdf?raw=True)
 
 ---
