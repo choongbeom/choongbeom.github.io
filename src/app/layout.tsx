@@ -1,29 +1,38 @@
-import Link from "next/link";
+// src/app/layout.tsx
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+import { Providers } from './providers'; // Providers 임포트
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import './globals.css'; 
+
+export const metadata = { 
+  title: 'Choongbeom.dev',
+  description: 'FrontendEngineering & DevOps Stories',
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="ko">
+    <html lang="ko" suppressHydrationWarning> 
       <body>
-        {/* Header */}
-        <header className="border-b border-gray-200 dark:border-gray-700">
-          <nav className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
-            <Link href="/" className="font-bold text-indigo-600 dark:text-indigo-400">
-              Choongbeom.dev
-            </Link>
-            <div className="flex gap-6 text-sm text-gray-600 dark:text-gray-400">
-              <Link href="/blog/">Blog</Link>
-              <Link href="/projects/">Projects</Link>
-              <Link href="/about/">About</Link>
-            </div>
-          </nav>
-        </header>
-
-        {children}
-
-        {/* Footer */}
-        <footer className="border-t border-gray-200 dark:border-gray-700 py-8 text-center text-sm text-gray-500">
-          © 2025 김충범 · <Link href="/rss.xml">RSS</Link> · <Link href="/sitemap.xml">Sitemap</Link>
-        </footer>
+        {/* ⭐️ Providers 컴포넌트 사용 ⭐️ */}
+        <Providers>
+          {/* 색상 클래스 제거: body 스타일이 전역 배경을 제어합니다. */}
+          <div className="flex flex-col min-h-screen"> 
+            
+            <Header>
+                {/* ThemeToggle 컴포넌트는 Header 내부에 있다고 가정 */}
+            </Header>
+            
+            <main className="flex-grow max-w-4xl mx-auto px-4 py-8"> 
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </Providers>
       </body>
     </html>
   );

@@ -1,115 +1,119 @@
 // app/page.tsx
-export default function HomePage() {
+// 서버 컴포넌트 (Server Component)
+
+import Link from 'next/link';
+import { PostCard } from '@/components/PostCard'; 
+
+// Post 데이터 구조를 가정합니다.
+interface Post {
+  slug: string;
+  title: string;
+  date: string;
+  tags: string[];
+}
+
+// ⭐️ 1. 실제 데이터 로직을 백엔드/제어 주제로 대체합니다. ⭐️
+async function getLatestPosts(): Promise<Post[]> {
+  return [
+    { slug: 'java-concurrent-update', title: '자바 ConcurrentHashMap을 활용한 고성능 동시성 제어', date: '2025년 12월 10일', tags: ['Java', 'Backend'] },
+    { slug: 'windows-ipc-shared-memory', title: 'C++ Windows IPC: Shared Memory를 이용한 실시간 데이터 전송', date: '2025년 12월 5일', tags: ['C++', 'Windows', 'IPC'] },
+  ];
+}
+
+export default async function HomePage() {
+  const latestPosts = await getLatestPosts();
+
+  // ⭐️ 2. 카테고리 주제를 백엔드/제어 시스템 중심으로 변경합니다. ⭐️
+  const featuredCategories = [
+    { name: 'Java & Spring', count: 18, slug: 'java-spring', color: 'indigo' }, // indigo color 유지
+    { name: 'C++ & Windows 제어', count: 15, slug: 'cpp-windows-control', color: 'red' }, // red color 유지
+    { name: 'Backend & DB 최적화', count: 10, slug: 'backend-db', color: 'gray' }, // gray color 유지
+    { name: 'DevOps & Tooling', count: 7, slug: 'devops-tooling', color: 'gray' }, // gray color 유지
+  ];
+
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
-      {/* Hero Section */}
-      <section className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-          문제 해결의 기록
+    <main className="max-w-4xl mx-auto px-4 py-12 md:py-24">
+
+      {/* 1. Hero Section (모바일/데스크톱 반응형 타이포그래피) */}
+      <section className="mb-20">
+        <h1 
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-snug lg:leading-tight"
+        >
+          {/* ⭐️ 내용 수정: 백엔드 및 제어 시스템 강조 ⭐️ */}
+          <span style={{ color: 'var(--accent-color)' }}>Backend System</span>
+          &amp;
+          <br />
+          <span style={{ color: 'var(--text-sub)' }}>장비 제어</span>
+          Insight
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-400">
-          대면창구 · AI · 제품화에서 배운 점을 기록합니다.
+        {/* ⭐️ 내용 수정: 16년차 시니어 개발자 문구 적용 ⭐️ */}
+        <p 
+          className="text-lg md:text-2xl max-w-2xl"
+          style={{ color: 'var(--text-sub)' }}
+        >
+          16년차 시니어 개발자의 Java, C++, Windows 제어 시스템 전문 지식 공유.
         </p>
-        <div className="mt-6 flex flex-wrap gap-2 justify-center">
-          {["Next.js", "STT", "OCR", "Biometric", "PoC/MVP"].map((tag) => (
-            <span
-              key={tag}
-              className="px-3 py-1 border rounded-full text-sm text-gray-500 dark:text-gray-400 border-gray-300 dark:border-gray-600"
-            >
-              #{tag}
-            </span>
-          ))}
-        </div>
       </section>
 
-      {/* Featured Post */}
-      <section className="mb-12">
-        <h2 className="text-sm uppercase font-semibold tracking-wide text-gray-500 dark:text-gray-400 mb-3">
-          대표 글
+      {/* 2. Latest Posts Section */}
+      <section className="mb-20">
+        {/* ⭐️ 제목 텍스트 수정: 한글로 변경 ⭐️ */}
+        <h2 
+          className="text-3xl font-bold mb-8 border-l-4 pl-3"
+          style={{ 
+            color: 'var(--text-main)', // 제목 텍스트
+            borderColor: 'var(--accent-color)', // 왼쪽 강조선
+          }}
+        >
+          최근 기술 인사이트
         </h2>
-        <article className="p-6 border rounded-xl bg-white dark:bg-gray-800 shadow-sm">
-          <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">
-            2025-10-01 · 읽기 5분
-          </div>
-          <a
-            href="/blog/nextjs-github-actions/"
-            className="block text-xl font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
+        {/* 모바일: 1열, 데스크톱: 2열 */}
+        <div className="grid gap-6 md:grid-cols-2">
+          {latestPosts.map((post) => (
+            <PostCard key={post.slug} post={post} />
+          ))}
+        </div>
+        <div className="mt-8 text-center">
+          {/* ⭐️ 모든 포스트 보기 링크 색상 적용 ⭐️ */}
+          <Link 
+            href="/posts" 
+            className="text-base font-medium hover:underline"
+            style={{ color: 'var(--accent-color)' }}
           >
-            Next.js + GitHub Actions로 심플하게 블로그 배포
-          </a>
-          <p className="mt-2 text-gray-600 dark:text-gray-300">
-            GitHub Actions 신규 방식을 활용해 정적 Export로 Pages에 배포한 기록.
-          </p>
-        </article>
-      </section>
-
-      {/* Latest Posts */}
-      <section className="mb-12">
-        <h2 className="text-sm uppercase font-semibold tracking-wide text-gray-500 dark:text-gray-400 mb-3">
-          최신 글
-        </h2>
-        <div className="grid gap-6 md:grid-cols-2">
-          {[
-            {
-              date: "2025-09-28",
-              title: "Clova STT Job 설계: 동기에서 배치로",
-              url: "/blog/clova-stt-job-arch/",
-              desc: "CSR 동기 호출의 병목을 풀기 위한 큐·폴링·세그먼트 정규화 전략."
-            },
-            {
-              date: "2025-09-21",
-              title: "브라우저 WASM OCR 적용기",
-              url: "/blog/ocr-wasm-on-device/",
-              desc: "온디바이스에서 OCR을 수행하며 얻은 성능 및 한계."
-            }
-          ].map((post) => (
-            <article
-              key={post.url}
-              className="p-5 border rounded-xl bg-white dark:bg-gray-800 shadow-sm"
-            >
-              <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">
-                {post.date}
-              </div>
-              <a
-                href={post.url}
-                className="block font-semibold text-gray-800 dark:text-gray-100 hover:underline"
-              >
-                {post.title}
-              </a>
-              <p className="mt-1 text-gray-600 dark:text-gray-300">{post.desc}</p>
-            </article>
-          ))}
+            모든 포스트 보기 &rarr;
+          </Link>
         </div>
       </section>
 
-      {/* Projects */}
+      {/* 3. Featured Categories/Tags (모바일 친화적 줄바꿈) */}
       <section>
-        <h2 className="text-sm uppercase font-semibold tracking-wide text-gray-500 dark:text-gray-400 mb-3">
-          프로젝트
+        {/* ⭐️ 제목 텍스트 수정: 한글로 변경 ⭐️ */}
+        <h2 
+          className="text-3xl font-bold mb-8 border-l-4 pl-3"
+          style={{ 
+            color: 'var(--text-main)', // 제목 텍스트
+            borderColor: 'var(--accent-color)', // 왼쪽 강조선
+          }}
+        >
+          주요 주제 탐색
         </h2>
-        <div className="grid gap-6 md:grid-cols-2">
-          <article className="p-5 border rounded-xl bg-white dark:bg-gray-800 shadow-sm">
-            <a
-              href="/projects/monitoring-system/"
-              className="font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
+        {/* flex-wrap을 사용하여 모바일에서 태그가 자연스럽게 줄바꿈되도록 함 */}
+        <div className="flex flex-wrap gap-3">
+          {featuredCategories.map((category) => (
+            <Link 
+              key={category.slug}
+              href={`/categories/${category.slug}`}
+              // 기존에 사용하시던 컬러 로직은 그대로 유지합니다.
+              className={`px-3 py-1.5 text-md font-medium rounded-full border 
+                            ${category.color === 'indigo' ? 'border-indigo-500 bg-indigo-50 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300 hover:bg-indigo-100 dark:hover:bg-indigo-800' : 
+                             category.color === 'red' ? 'border-red-500 bg-red-50 text-red-700 dark:bg-red-900/50 dark:text-red-300 hover:bg-red-100 dark:hover:bg-red-800' :
+                            'border-gray-300 bg-gray-50 text-gray-700 dark:border-gray-700 dark:bg-gray-700/50 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/70'
+                           } 
+                            transition whitespace-nowrap`}
             >
-              대면창구 통합 관제(MVP)
-            </a>
-            <p className="mt-1 text-gray-600 dark:text-gray-300">
-              장비/상태/알림 일원화. PoC→MVP에서 남긴 인사이트.
-            </p>
-          </article>
-          <article className="p-5 border rounded-xl bg-white dark:bg-gray-800 shadow-sm">
-            <a
-              href="/projects/id-verification/"
-              className="font-semibold text-indigo-600 dark:text-indigo-400 hover:underline"
-            >
-              신분증 진위확인 확장
-            </a>
-            <p className="mt-1 text-gray-600 dark:text-gray-300">
-              FADGI·KISA·FBI 기준 실무 적용 포인트.
-            </p>
-          </article>
+              #{category.name} ({category.count})
+            </Link>
+          ))}
         </div>
       </section>
     </main>

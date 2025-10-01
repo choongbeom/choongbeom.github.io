@@ -1,26 +1,59 @@
+/* src/app/globals.css */
+
 @import "tailwindcss";
 
+/* ---------------------------------------------------- */
+/* CSS 변수 정의 (Next-themes가 <html> 클래스를 토글하여 변수를 변경함) */
+/* ---------------------------------------------------- */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* 라이트 모드 (기본값) */
+  --background: #ffffff;         /* 배경색: 순백색 */
+  --foreground: #171717;         /* 본문 텍스트: 거의 검은색 */
+  
+  --accent-color: #4f46e5;       /* 강조색: 인디고 (Links, Headers) */
+  --accent-hover: #4338ca;       /* 강조색 호버 */
+  
+  --text-main: #171717;          /* 주요 텍스트 */
+  --text-sub: #525252;           /* 보조 텍스트 (날짜, 설명) */
+  
+  --header-bg: #ffffff;          /* 헤더 배경 */
+  --header-link: #171717;        /* 헤더 링크 색상 */
+  
+  --comp-bg: #f9f9f9;            /* 컴포넌트 배경 (카드, 검색창 등) */
+  --comp-border: #e5e7eb;        /* 컴포넌트 경계선 */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html.dark {
+  /* 다크 모드 전환: html.dark 클래스가 붙을 때 변수 재정의 */
+  --background: #0a0a0a;         /* 배경색: 아주 어두운 검은색 */
+  --foreground: #e5e7eb;         /* 본문 텍스트: 밝은 회색 */
+
+  --accent-color: #818cf8;       /* 강조색: 밝은 인디고 */
+  --accent-hover: #6366f1;       /* 강조색 호버 */
+
+  --text-main: #f3f4f6;          /* 주요 텍스트 */
+  --text-sub: #a1a1aa;           /* 보조 텍스트 (날짜, 설명) */
+
+  --header-bg: #0a0a0a;          /* 헤더 배경 */
+  --header-link: #e5e7eb;        /* 헤더 링크 색상 */
+  
+  --comp-bg: #1f2937;            /* 컴포넌트 배경 (어두운 회색) */
+  --comp-border: #374151;        /* 컴포넌트 경계선 */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* ⭐️ 충돌 방지를 위해 body에 !important를 사용하여 CSS 변수가 항상 적용되도록 합니다. ⭐️ */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background) !important; 
+  color: var(--foreground) !important; 
+  font-family: 'Inter', sans-serif; /* 모던 폰트 적용 (Tailwind 기본 폰트) */
+  /* 부드러운 스크롤 */
+  scroll-behavior: smooth;
+  /* 모드 전환 애니메이션 */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Link Hover Effect (컴포넌트 내에서 적용되므로 전역은 최소화) */
+a {
+    transition: color 0.2s ease;
 }
