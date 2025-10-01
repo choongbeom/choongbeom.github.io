@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start",
+    "dev::turbopack": "next dev --turbopack",
+    "build::turbopack": "next build --turbopack",
+    "start::origin": "next start",
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "npx serve out -p 3000",
     "lint": "eslint"
   },
   "dependencies": {
