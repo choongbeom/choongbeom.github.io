@@ -1,30 +1,22 @@
 // src/app/lib/posts.ts
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 import { PostData, PostContentData } from './types'; 
 
-// gray-matter와 Node.js 모듈을 동적으로 가져오는 헬퍼 함수 (서버 전용)
-function getNodeModules() {
-    const fs = require('fs');
-    const path = require('path');
-    const matter = require('gray-matter');
-
-    const POSTS_DIRECTORY = path.join(process.cwd(), 'src', 'app', 'posts', 'mdx');
-
-    return { fs, path, matter, POSTS_DIRECTORY };
-}
+const POSTS_DIRECTORY = path.join(process.cwd(), 'src', 'app', 'posts', 'mdx');
 
 // 슬러그(파일명) 목록을 가져옵니다.
 export function getAllPostSlugs(): string[] {
     try {
-        const { fs, POSTS_DIRECTORY } = getNodeModules();
-        
         const filenames: string[] = fs.readdirSync(POSTS_DIRECTORY); 
 
         return filenames
             .filter((filename: string) => filename.endsWith('.mdx')) 
             .map((filename: string) => filename.replace(/\.mdx$/, '')); 
             
-    } catch (e) {
-        // console.error("Error reading post directory:", e);
+    } catch (error) {
+        console.error("Error reading post directory:", error);
         return [];
     }
 }
@@ -32,7 +24,6 @@ export function getAllPostSlugs(): string[] {
 // 1. 포스트 메타데이터만 가져옵니다. (getAllPosts에서 사용)
 export function getPostMetadata(slug: string): PostData | undefined {
     try {
-        const { fs, path, matter, POSTS_DIRECTORY } = getNodeModules();
         const fullPath = path.join(POSTS_DIRECTORY, `${slug}.mdx`);
         const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -51,8 +42,8 @@ export function getPostMetadata(slug: string): PostData | undefined {
             tags: Array.isArray(data.tags) ? data.tags : [],
             description,
         };
-    } catch (e) {
-        // console.error(`Error getting metadata for post ${slug}:`, e);
+    } catch (error) {
+        console.error(`Error getting metadata for post ${slug}:`, error);
         return undefined; // 메타데이터 로드 실패 시 undefined 반환
     }
 }
@@ -61,7 +52,6 @@ export function getPostMetadata(slug: string): PostData | undefined {
 // 2. 포스트 메타데이터와 콘텐츠(MDX 원본)를 모두 가져옵니다. ([slug]/page.tsx에서 사용)
 export function getPostContent(slug: string): PostContentData {
     try {
-        const { fs, path, matter, POSTS_DIRECTORY } = getNodeModules();
         const fullPath = path.join(POSTS_DIRECTORY, `${slug}.mdx`);
         const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -81,8 +71,8 @@ export function getPostContent(slug: string): PostContentData {
             description,
             content, // MDX 원본 문자열
         };
-    } catch (e) {
-        console.error(`Error getting content for post ${slug}:`, e);
+    } catch (error) {
+        console.error(`Error getting content for post ${slug}:`, error);
         // 에러 발생 시 notFound() 처리를 위해 특수 값 반환
         return {
             slug,

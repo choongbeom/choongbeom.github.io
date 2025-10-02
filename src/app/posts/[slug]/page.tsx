@@ -13,7 +13,11 @@ import { DynamicMdxWrapper } from '@/components/DynamicMdxWrapper';
 import type { Metadata } from 'next'; 
 import GiscusComments from '@/components/GiscusComments';
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+interface PageProps {
+    params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { slug } = await params;
     
     // 1. 포스트 데이터 가져오기 (메타데이터를 가져오기 위해 재사용)
@@ -57,7 +61,7 @@ export async function generateStaticParams() {
 }
 
 // 3. PostPage (Server Component): 데이터 Fetch 및 렌더링
-export default async function PostPage({ params }: { params: { slug: string } }) {
+export default async function PostPage({ params }: PageProps) {
     const { slug } = await params;
 
     // ⭐️ 서버 측 함수 호출: 파일 시스템에서 포스트 콘텐츠를 가져옵니다. ⭐️

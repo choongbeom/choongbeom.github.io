@@ -105,7 +105,7 @@ export function PostsClient({ initialPosts, trendingTags }: PostsClientProps) {
                                 className="text-lg col-span-full text-center"
                                 style={{ color: 'var(--text-sub)' }} 
                             >
-                                검색 결과 또는 '{selectedTag || '전체'}' 태그에 해당하는 포스트가 없습니다.
+                                검색 결과 또는 &apos;{selectedTag || '전체'}&apos; 태그에 해당하는 포스트가 없습니다.
                             </p>
                         )}
                     </div>

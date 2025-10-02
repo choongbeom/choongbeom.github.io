@@ -6,7 +6,7 @@ import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
 
 interface MdxRendererProps {
     mdxSource: MDXRemoteSerializeResult;
-    components: Record<string, React.ComponentType<any>>;
+    components: Record<string, React.ComponentType<Record<string, unknown>>>;
 }
 
 export const MdxRenderer: React.FC<MdxRendererProps> = ({ mdxSource, components }) => {

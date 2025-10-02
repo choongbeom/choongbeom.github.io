@@ -22,42 +22,54 @@ export async function generateStaticParams() {
         });
     });
 
-    return Array.from(slugs).map(slug => ({ slug }));
+    return Array.from(slugs).map(slug => ({ 
+        slug: slug 
+    }));
 }
 
-export default async function CategoryPage({ params }: { params: { slug: string } }) {
+// Next.js 15: params는 Promise 타입
+interface PageProps {
+    params: Promise<{ slug: string }>;
+}
+
+export default async function CategoryPage({ params }: PageProps) {
+    // params를 await로 언래핑
     const { slug } = await params;
 
     const allPostsData = await getAllPosts();
     const targetSlug = slug.toLowerCase();
 
     const filteredPostsData = allPostsData.filter(post => 
-        // 포스트의 태그 중 하나라도 현재 슬러그와 일치하면 포함
         post.tags.some(tag => tag.toLowerCase().replace(/[\s&]+/g, '-') === targetSlug)
     );
 
-    // 카테고리 정보 추출 (가장 첫 번째 포스트의 태그 이름 사용)
+    // 카테고리 정보 추출
     const categoryInfo = filteredPostsData.length > 0
         ? {
-            name: filteredPostsData[0].tags.find(tag => tag.toLowerCase().replace(/[\s&]+/g, '-') === targetSlug) || slug,
+            name: filteredPostsData[0].tags.find(tag => 
+                tag.toLowerCase().replace(/[\s&]+/g, '-') === targetSlug
+            ) || slug,
             slug: targetSlug,
         }
         : { name: slug, slug: targetSlug }; 
         
-        // 색상 클래스 계산
-        const color = getTagColor(categoryInfo.name);
-        const colorClass = getTagColorClass(color);            
-        const accentColor = `var(--${color}-600, var(--accent-color))`;
+    // 색상 클래스 계산
+    const color = getTagColor(categoryInfo.name);
+    const colorClass = getTagColorClass(color);            
+    const accentColor = `var(--${color}-600, var(--accent-color))`;
 
-        // PostCard에 전달할 데이터 형식으로 변환
-        const filteredPosts = filteredPostsData.map((post: PostData) => ({
-            slug: post.slug,
-            title: post.title,
-            date: new Date(post.date).toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' }), 
-            tags: post.tags,
-            description: post.description,
-        }));
-
+    // PostCard에 전달할 데이터 형식으로 변환
+    const filteredPosts = filteredPostsData.map((post: PostData) => ({
+        slug: post.slug,
+        title: post.title,
+        date: new Date(post.date).toLocaleDateString('ko-KR', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        }), 
+        tags: post.tags,
+        description: post.description,
+    }));
 
     return (
         <div className="max-w-4xl mx-auto px-4 py-12 md:py-20">
@@ -70,7 +82,6 @@ export default async function CategoryPage({ params }: { params: { slug: string 
                     className="text-4xl font-extrabold mb-4 sm:mb-0 border-l-4 pl-4"
                     style={{ 
                         color: 'var(--text-main)', 
-                        // 카테고리 색상으로 강조선 색상 변경
                         borderColor: accentColor, 
                     }}
                 >
@@ -97,7 +108,7 @@ export default async function CategoryPage({ params }: { params: { slug: string 
                         className="text-lg col-span-full text-center"
                         style={{ color: 'var(--text-sub)' }} 
                     >
-                        '{categoryInfo.name}' 카테고리에 해당하는 포스트가 없습니다.
+                        &apos;{categoryInfo.name}&apos; 카테고리에 해당하는 포스트가 없습니다.
                     </p>
                 )}
             </div>

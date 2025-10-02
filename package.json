@@ -7,7 +7,7 @@
     "build::turbopack": "next build --turbopack",
     "start::origin": "next start",
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "npx serve out -p 3000",
     "lint": "eslint"
   },
