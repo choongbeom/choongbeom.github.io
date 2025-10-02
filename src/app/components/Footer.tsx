@@ -1,4 +1,4 @@
-// src/components/Footer.tsx
+// src/app/components/Footer.tsx
 import React from 'react';
 
 export function Footer() {

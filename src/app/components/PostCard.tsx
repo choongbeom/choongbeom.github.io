@@ -1,29 +1,31 @@
-// src/components/PostCard.tsx
-
+// src/app/components/PostCard.tsx
 import Link from 'next/link';
-
-interface Post {
-  slug: string;
-  title: string;
-  date: string;
-  tags: string[];
-}
+import { CATEGORY_COLOR_MAP } from '@/lib/constants';
+import { PostData } from '@/lib/types';
+import { getTagColorClass } from '@/lib/styles';
 
 interface PostCardProps {
-  post: Post;
+  post: PostData;
 }
+
+// 태그 이름(키)을 색상(값)으로 변환하는 함수
+const getTagColor = (tag: string) => {
+    // 태그 이름에서 공백을 제거하고 소문자로 변환하여 맵에서 찾습니다.
+    const normalizedTag = tag.toLowerCase().replace(/\s/g, '');
+    
+    // 정확한 매칭을 우선하고, 없으면 기본값 'gray' 반환
+    return CATEGORY_COLOR_MAP[normalizedTag] || 'gray'; 
+};
 
 export function PostCard({ post }: PostCardProps) {
   return (
     <Link 
       href={`/posts/${post.slug}`} 
-      /* * ⭐️ 디자인 수정: style={{ '--tw-ring-color': '...' }} 제거 ⭐️
-       * 대신 ring-indigo-500과 hover:ring-2 클래스를 사용하여 Tailwind가 
-       * CSS 변수를 통해 생성한 CSS 속성을 활용하도록 합니다.
-       */
+      /* 호버 시 ring 효과 추가: 테마에 맞는 ring 색상으로 설정됩니다. */
       className={`
         post-card p-5 md:p-6 rounded-xl block transition-all duration-300 transform hover:-translate-y-0.5
-        border       
+        border
+        hover:ring-2 ring-indigo-500 dark:ring-indigo-400
       `}
       style={{
         backgroundColor: 'var(--comp-bg)',
@@ -44,20 +46,21 @@ export function PostCard({ post }: PostCardProps) {
         {post.date}
       </p>
       
-      {/* 태그 목록: 배경색과 텍스트 색상 변수 적용 */}
       <div className="flex flex-wrap gap-2 mt-3">
-        {post.tags.map(tag => (
-          <span 
-            key={tag} 
-            className="px-3 py-1 text-xs rounded-full font-medium"
-            style={{
-                backgroundColor: 'var(--comp-border)', // 태그 배경은 경계선 색상 활용
-                color: 'var(--text-sub)'
-            }}
-          >
-            #{tag}
-          </span>
-        ))}
+        {post.tags.map(tag => {
+          const color = getTagColor(tag); // 태그 색상 가져오기
+          
+          return (
+            <span 
+              key={tag} 
+              className={`px-3 py-1 text-xs rounded-full font-medium border
+                          ${getTagColorClass(color)} 
+                          transition whitespace-nowrap`}
+            >
+              #{tag}
+            </span>
+          );
+        })}
       </div>
     </Link>
   );

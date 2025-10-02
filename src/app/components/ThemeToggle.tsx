@@ -1,4 +1,4 @@
-// src/components/ThemeToggle.tsx
+// src/app/components/ThemeToggle.tsx
 'use client';
 
 import { useTheme } from 'next-themes';
@@ -35,7 +35,6 @@ export function ThemeToggle() {
       className="p-2 rounded-full transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800"
     >
       {isDark ? (
-        // ⭐️ 해 아이콘 (Sun Icon): var(--header-link) 색상 적용 ⭐️
         <svg 
             className="w-6 h-6" 
             style={{ color: 'var(--header-link)' }} 
@@ -44,7 +43,6 @@ export function ThemeToggle() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 7a5 5 0 100 10 5 5 0 000-10zM12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
         </svg>
       ) : (
-        // ⭐️ 달 아이콘 (Moon Icon): var(--header-link) 색상 적용 ⭐️
         <svg 
             className="w-6 h-6" 
             style={{ color: 'var(--header-link)' }} 

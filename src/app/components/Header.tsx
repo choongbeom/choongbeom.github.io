@@ -1,9 +1,9 @@
-// src/components/Header.tsx
+// src/app/components/Header.tsx
 'use client'; 
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { ThemeToggle } from './ThemeToggle'; // ⭐️ ThemeToggle 임포트 ⭐️
+import { ThemeToggle } from './ThemeToggle';
 
 // Navigation Links 정의
 const NavLinks = () => (
@@ -19,7 +19,6 @@ export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        /* ⭐️ 고정 헤더, 배경/테두리 변수 적용, z-index 높여 내용 위로 오게 처리 ⭐️ */
         <header 
             className="sticky top-0 z-50 shadow-sm border-b"
             style={{ 

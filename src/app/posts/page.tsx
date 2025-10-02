@@ -1,106 +1,35 @@
-'use client';
+// src/app/posts/page.tsx
+import React from 'react';
+import { PostsClient } from './PostsClient'; 
+import { getAllPosts, getCategoriesFromPosts } from '@/lib/posts'; 
+import { PostData } from '@/lib/types'; 
 
-import { useState, useMemo } from 'react';
-import { PostCard } from '@/components/PostCard'; 
-
-// 데이터 구조를 가정합니다.
-interface Post {
-    slug: string;
-    title: string;
-    date: string;
-    tags: string[];
+// 헬퍼 함수: PostData를 PostCard가 사용하는 Post 타입으로 변환
+function mapPostDataToPost(postData: PostData): PostData {
+    return {
+        slug: postData.slug,
+        title: postData.title,
+        // 사용자에게 친숙한 날짜 포맷으로 변환
+        date: new Date(postData.date).toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' }),
+        tags: postData.tags,
+        description: postData.description,
+    };
 }
 
-// 목업 데이터
-const ALL_POSTS: Post[] = [
-    { slug: 'nextjs-ssg-deep-dive', title: 'Next.js 14 App Router에서 SSG 완벽 적용하기', date: '2025년 10월 1일', tags: ['Nextjs', 'SSG'] },
-    { slug: 'github-actions-automation', title: 'GitHub Actions로 배포 파이프라인 자동화 팁', date: '2025년 9월 28일', tags: ['DevOps', 'GithubActions'] },
-    { slug: 'javascript-modern-async', title: '자바스크립트의 현대적인 비동기 처리 기법 마스터하기', date: '2025년 9월 20일', tags: ['JavaScript', 'Async'] },
-    { slug: 'pwa-checklist', title: 'PWA 적용을 위한 핵심 체크리스트', date: '2025년 9月 15일', tags: ['Frontend', 'PWA'] },
-    // 추가 포스트를 가정합니다.
-    { slug: 'docker-compose-for-dev', title: '개발 환경을 위한 Docker Compose 설정', date: '2025년 9월 10일', tags: ['DevOps', 'Docker'] },
-];
+// Server Component (async 함수): 데이터 Fetch 담당
+export default async function PostsPage() {
+    // ⭐️ 서버에서만 실행되므로 파일 시스템 접근이 안전합니다. ⭐️
+    const allPostsData = await getAllPosts(); 
+    
+    // 클라이언트 컴포넌트에 넘겨줄 형태로 변환
+    const initialPosts = allPostsData.map(mapPostDataToPost);
 
-export default function PostsPage() {
-    const [searchTerm, setSearchTerm] = useState('');
+    // 주요 태그 추출 (가장 많이 사용된 태그 순, 상위 8개)
+    const allCategories = getCategoriesFromPosts(allPostsData);
+    const trendingTags = allCategories.slice(0, 8).map(cat => cat.name).sort(); 
 
-    const filteredPosts = useMemo(() => {
-        if (!searchTerm) return ALL_POSTS;
-        
-        const lowerCaseSearch = searchTerm.toLowerCase();
-        
-        return ALL_POSTS.filter(post => 
-            post.title.toLowerCase().includes(lowerCaseSearch) ||
-            post.tags.some(tag => tag.toLowerCase().includes(lowerCaseSearch))
-        );
-    }, [searchTerm]);
-
+    // 데이터를 Client Component에 Prop으로 전달하여 하이드레이션 문제를 해결합니다.
     return (
-        <div className="max-w-4xl mx-auto px-4">
-            {/* 제목 색상 및 경계선 색상 적용 */}
-            <h1 
-                className="text-4xl font-extrabold mb-10 border-l-4 pl-4"
-                style={{ 
-                    color: 'var(--text-main)', 
-                    borderColor: 'var(--accent-color)' 
-                }}
-            >
-                All Posts
-            </h1>
-
-            {/* ⭐️ 검색창 스타일 적용: comp-bg, comp-border, text-main 사용 ⭐️ */}
-            <input
-                type="text"
-                placeholder="제목 또는 태그로 검색..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full p-4 rounded-lg mb-10 text-lg 
-                           focus:outline-none focus:ring-2 focus:ring-indigo-500
-                           placeholder-gray-500 dark:placeholder-gray-400 transition"
-                style={{
-                    backgroundColor: 'var(--comp-bg)', // 컴포넌트 배경
-                    border: '1px solid var(--comp-border)', // 컴포넌트 경계선
-                    color: 'var(--text-main)', // 입력 텍스트 색상
-                }}
-            />
-
-            <div className="grid gap-8 md:grid-cols-2">
-                {filteredPosts.length > 0 ? (
-                    filteredPosts.map(post => (
-                        <PostCard key={post.slug} post={post} />
-                    ))
-                ) : (
-                    <p 
-                        className="text-lg col-span-full text-center"
-                        style={{ color: 'var(--text-sub)' }} // 검색 결과 없을 때 텍스트
-                    >
-                        검색 결과가 없습니다.
-                    </p>
-                )}
-            </div>
-
-            {/* 정렬된 태그 목록 (간단히 목업) */}
-            <div className="mt-12">
-                <h2 
-                    className="text-2xl font-bold mb-4"
-                    style={{ color: 'var(--text-main)' }}
-                >
-                    Trending Tags
-                </h2>
-                <div className="flex flex-wrap gap-2">
-                    {/* 태그는 Tailwind 클래스를 유지합니다. */}
-                    {['Nextjs', 'DevOps', 'JavaScript', 'SSG', 'Docker'].map(tag => (
-                        <span 
-                            key={tag} 
-                            className="px-3 py-1 text-sm rounded-full 
-                                       bg-gray-100 text-gray-700 
-                                       dark:bg-gray-700 dark:text-gray-300"
-                        >
-                            #{tag}
-                        </span>
-                    ))}
-                </div>
-            </div>
-        </div>
+        <PostsClient initialPosts={initialPosts} trendingTags={trendingTags} />
     );
 }
