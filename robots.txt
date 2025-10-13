@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # 검색 엔진에 알려줄 사이트맵 위치
-Sitemap: https://choongbeom.github.io/choongbeom-blog-next/sitemap.xml
+Sitemap: https://choongbeom.github.io/sitemap.xml

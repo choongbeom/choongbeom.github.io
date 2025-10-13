@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         openGraph: {
             title: title,
             description: description,
-            url: `https://choongbeom.github.io/choongbeom-blog-next/posts/${slug}`, // 실제 도메인으로 변경하세요
+            url: `https://choongbeom.github.io/posts/${slug}`, // 실제 도메인으로 변경하세요
             type: 'article',
             publishedTime: postData.date,
             tags: postData.tags,

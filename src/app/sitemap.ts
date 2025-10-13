@@ -6,7 +6,7 @@ import { getAllPostSlugs } from '@/lib/posts'; // 포스트 슬러그를 가져�
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://choongbeom.github.io/choongbeom-blog-next'; // 실제 도메인으로 변경
+  const baseUrl = 'https://choongbeom.github.io'; // 실제 도메인으로 변경
   const postSlugs = getAllPostSlugs();
 
   const postEntries: MetadataRoute.Sitemap = postSlugs.map((slug) => ({

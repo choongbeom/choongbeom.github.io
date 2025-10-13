@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'Choongbeom Kim | 시스템 엔지니어링 & 개발 블로그',
     description:
       'Windows 제어, 백엔드 통합 등 실무 중심의 개발 경험과 기술 아카이브를 공유합니다.',
-    url: 'https://choongbeom.github.io/choongbeom-blog-next',
+    url: 'https://choongbeom.github.io',
     siteName: 'Choongbeom.dev',
     locale: 'ko_KR',
     type: 'website',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
 
   // 6. 기본 언어 및 기본 URL
-  metadataBase: new URL('https://choongbeom.github.io/choongbeom-blog-next'),
+  metadataBase: new URL('https://choongbeom.github.io'),
 };
 
 
