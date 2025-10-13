@@ -5,7 +5,7 @@
 export const CATEGORY_COLOR_MAP: { [key: string]: string } = {
     // 백엔드/프론트엔드
     'backend': 'indigo',
-    'frontend': 'pink',        // 변경됨 (고유 색상)
+    'frontend': 'pink',       
     'database': 'cyan',
     
     // 개발 환경 및 인프라
@@ -15,18 +15,19 @@ export const CATEGORY_COLOR_MAP: { [key: string]: string } = {
     
     // 언어 및 프레임워크
     'c-language': 'red',
-    'java': 'orange',          // 변경됨 (고유 색상)
-    'spring': 'emerald',       // 변경됨 (고유 색상)
+    'java': 'orange',         
+    'spring': 'emerald',      
     'javascript': 'green',
-    'orm': 'amber',            // 변경됨 (고유 색상)
+    'orm': 'amber',           
 
     // 모바일
-    'flutter': 'teal',         // 변경됨 (고유 색상)
-    'dart': 'cyan',            // 변경됨 (고유 색상)
+    'flutter': 'teal',        
+    'dart': 'cyan',           
 
     // 메타 및 기타
+    'ai': 'fuchsia',
     'retrospective': 'yellow',
-    'profile': 'lime',         // 변경됨 (고유 색상)
+    'profile': 'lime',        
     'etc': 'gray',
 };
 
