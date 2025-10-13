@@ -1,11 +1,9 @@
 ---
 title: "OSIV (Open Session/Entity Manager In View)"
 date: "2021-10-28T11:04:00+09:00"
-tags: ["JPA", "Backend", "Transaction", "OSIV"]
+tags: ["orm"]
 slug: "jpa-osiv-concept"
 ---
-
-> OSIV
 
 * Open-In-View 또는 Open-Session-In-View 또는 Open-EntityManager-In-View를 관례상 OSIV라고 한다.  
 
@@ -27,5 +25,6 @@ Transaction이 끝나면 영속성컨텍스트 또한 닫힌다.
 영속성 컨텍스트를 유지한다는 건, DB Connection 또한 계속 가지고 있다는 뜻이다.  
 실시간 트래픽이 중요한 어플리케이션에서는 DB Connection이 모자를 수 있다.  
 성능이 중요하다면 OSIV는 false로 설정하자.
-   
-### 출처: [https://gracelove91.tistory.com/100](https://gracelove91.tistory.com/100) [공부 기록]
+
+## 참고 자료  
+- [https://gracelove91.tistory.com/100](https://gracelove91.tistory.com/100) [공부 기록]

@@ -18,7 +18,7 @@ function mapPostDataToPost(postData: PostData): PostData {
 
 // Server Component (async 함수): 데이터 Fetch 담당
 export default async function PostsPage() {
-    // ⭐️ 서버에서만 실행되므로 파일 시스템 접근이 안전합니다. ⭐️
+    // 서버에서만 실행되므로 파일 시스템 접근이 안전합니다.
     const allPostsData = await getAllPosts(); 
     
     // 클라이언트 컴포넌트에 넘겨줄 형태로 변환

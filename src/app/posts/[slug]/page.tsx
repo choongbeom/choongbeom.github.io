@@ -12,6 +12,7 @@ import { MDXRemoteSerializeResult } from 'next-mdx-remote';
 import { DynamicMdxWrapper } from '@/components/DynamicMdxWrapper';
 import type { Metadata } from 'next'; 
 import GiscusComments from '@/components/GiscusComments';
+import remarkGfm from 'remark-gfm';
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         return {}; // 포스트가 없으면 기본 메타데이터 반환
     }
 
-    const title = `${postData.title} | 내 블로그 이름`; // 블로그 이름 추가
+    const title = `${postData.title} | Choongbeom.dev`; // 블로그 이름 추가
     // 설명이 없으면 대체 텍스트를 사용합니다.
     const description = postData.description || `${postData.title}에 대한 자세한 내용을 확인하세요.`;
 
@@ -64,7 +65,7 @@ export async function generateStaticParams() {
 export default async function PostPage({ params }: PageProps) {
     const { slug } = await params;
 
-    // ⭐️ 서버 측 함수 호출: 파일 시스템에서 포스트 콘텐츠를 가져옵니다. ⭐️
+    // 서버 측 함수 호출: 파일 시스템에서 포스트 콘텐츠를 가져옵니다.
     const postData: PostContentData = await getPostContent(slug);
 
     if (postData.title === 'Error Loading Post' && postData.content === '# Error Loading Content') {
@@ -76,12 +77,12 @@ export default async function PostPage({ params }: PageProps) {
     
     const mdxSource: MDXRemoteSerializeResult = await serialize(postData.content, {
         mdxOptions: {
-            // 여기에 remark/rehype 플러그인 설정을 추가할 수 있습니다.
+            remarkPlugins: [remarkGfm]
         },
         parseFrontmatter: false, // 이미 getPostContent에서 frontmatter를 파싱했으므로 false
     });
 
-    // ⭐️ JSON-LD 스키마 정의 ⭐️
+    // JSON-LD 스키마 정의
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
@@ -101,7 +102,7 @@ export default async function PostPage({ params }: PageProps) {
     
     return (
         <div className="container mx-auto p-4 max-w-7xl">
-            {/* ⭐️ JSON-LD 스크립트 삽입 ⭐️ */}
+            {/* JSON-LD 스크립트 삽입 */}
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -141,7 +142,7 @@ export default async function PostPage({ params }: PageProps) {
                 </div>
             </header>
             
-            {/* ⭐️ MDX 콘텐츠 렌더링 영역을 MDXRemote 컴포넌트로 대체 ⭐️ */}
+            {/* MDX 콘텐츠 렌더링 영역을 MDXRemote 컴포넌트로 대체 */}
             <article className="prose dark:prose-invert max-w-none" style={{ color: 'var(--text-main)' }}>
                 {/* 3. 컴파일된 MDX 소스를 MDXRemote 컴포넌트로 렌더링합니다. */}
                 <DynamicMdxWrapper 

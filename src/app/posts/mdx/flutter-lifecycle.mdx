@@ -1,11 +1,9 @@
 ---
-title: "Stateful Widget Lifecycle(생명주기)"
+title: "Fullter Stateful Widget Lifecycle(생명주기)"
 date: "2022-02-15T11:00:00+09:00"
-tags: ["Flutter", "Dart"]
+tags: ["flutter"]
 slug: "flutter-lifecycle"
 ---
-
-> Stateful Widget Lifecycle(생명주기)
 
 플러터가 StatefulWidget을 만들 때, State객체를 만든다. 이 개체는 해당 위젯의 모든 가변 상태가 유지 되는 곳이다.  
 
@@ -46,8 +44,8 @@ class MyHomePage extends StatefulWidget {
 }
 ```
 
- mounted is true  
-
+* mounted is true  
+  
   createState가 state클래스를 생성하면 buildContext는 state에 할당 된다.  
   BuildContext는 위젯이 배치된 위젯 트리의 위치를 단순화 한 것이다.  
   
@@ -121,7 +119,7 @@ void didUpdateWidget(Widget oldWidget) {
 
   이 메서드는 거의 사용되지 않는다.  
   deactivate()는 tree에서 State가 제거 될때 호출 된다. 그러나 현재 프레임 변경이 완료되기 전에 다시 삽입 될 수 있다. 이 메서드는 State객체가 tree의 한 지점에서 다른 지점으로 이동 할 수 있기 때문에 기본적으로 존재한다.  
-  필요에 따라 자주 호출 할 수 있는 이유는 다시 그리(repainting)는데 소용되는 비용이 저렴하기 때문이다. :-)  
+  필요에 따라 자주 호출 할 수 있는 이유는 다시 그리(repainting)는데 소용되는 비용이 저렴하기 때문이다.  
 
 ```dart
 void updateProfile(String name) {
@@ -137,5 +135,5 @@ void updateProfile(String name) {
   
   이 상태에서 state 객체는 결코 다시 mount되지 않으며, setState()가 호출되면 에러가 발생한다.  
 
-   
-### 출처: [https://sothecode.tistory.com/14?category=844543](https://sothecode.tistory.com/14?category=844543) [소더코드의 개발자들 그리고...]
+## 참고 자료
+- [https://sothecode.tistory.com/14?category=844543](https://sothecode.tistory.com/14?category=844543) [소더코드의 개발자들 그리고...]

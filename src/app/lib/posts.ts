@@ -90,7 +90,7 @@ export function getPostContent(slug: string): PostContentData {
 export function getAllPosts(): PostData[] {
     const slugs = getAllPostSlugs();
     
-    // ⭐️ getPostMetadata를 사용하여 메타데이터만 가져옵니다. ⭐️
+    // getPostMetadata를 사용하여 메타데이터만 가져옵니다.
     const posts = slugs.map(slug => getPostMetadata(slug)).filter((post): post is PostData => post !== undefined);
     
     // 최신순으로 정렬합니다.

@@ -1,11 +1,11 @@
 ---
 title: "Querydsl - CaseBuilder와 Expressions"
 date: "2021-11-09T13:04:00+09:00"
-tags: ["Querydsl", "DB", "JPA"]
+tags: ["orm"]
 slug: "querydsl-casebuilder-expressions"
 ---
 
-> CaseBuilder
+### CaseBuilder
 
 Querydsl에서 CASE - WHEN 구문을 사용하기 위해서는 CaseBuilder()를 사용해야 합니다.
 
@@ -52,7 +52,7 @@ Querydsl에서 CASE - WHEN 구문을 사용하기 위해서는 CaseBuilder()를 
 ```
 
 
-> Expressions
+### Expressions
 
 com.querydsl.core.types.dsl.Expressions 클래스는 동적인 표현식 생성을 위한 정적 팩토리 클래스다.  
 팩토리 메서드는 리턴 타입에 따라 이름을 지었으므로 쉽게 유추할 수 있다.  
@@ -76,7 +76,7 @@ Expressions.predicate(Ops.STARTS_WITH, personFirstName, constant);
 
 Path 인스턴스는 변수와 프로퍼티를 의미하고, Constant는 상수를, Operation은 오퍼레이션을 표현하며, TemplateExpression 인스턴스를 사용해서 String 템플릿으로 표현식을 표현할 수 있다.  
 
-
-* 참고: [CaseBuilder (Querydsl 4.4.0 API)](https://querydsl.com/static/querydsl/4.4.0/apidocs/com/querydsl/core/types/dsl/CaseBuilder.html)
-* 참고: [Querydsl 레퍼런스 - 일반사용법](https://querydsl.com/static/querydsl/4.0.0/reference/ko-KR/html/ch03.html)
+## 참고 자료
+- [CaseBuilder (Querydsl 4.4.0 API)](https://querydsl.com/static/querydsl/4.4.0/apidocs/com/querydsl/core/types/dsl/CaseBuilder.html)
+- [Querydsl 레퍼런스 - 일반사용법](https://querydsl.com/static/querydsl/4.0.0/reference/ko-KR/html/ch03.html)
 

@@ -39,6 +39,12 @@
   --indigo-600: #4f46e5;  /* java-spring */
   --red-600: #dc2626;     /* cpp-windows-control */
   --gray-600: #4b5563;    /* gray (backend-db, db) */
+
+  --code-bg: #e9eaeb;        /* 라이트 모드 */
+  --code-text: #24292f;
+
+  --color-alert-info-bg: #f0f8ff;
+  --color-alert-info-text: #1f3b64;
 }
 
 html.dark {
@@ -75,9 +81,29 @@ html.dark {
   --indigo-600: #818cf8;  /* indigo-400 */
   --red-600: #f87171;     /* red-400 */
   --gray-600: #9ca3af;    /* gray-400 */
+
+  --code-bg: #1b1e22;        /* 다크 모드 */
+  --code-text: #c9d1d9;
+
+  blockquote {
+    /* 배경색을 어둡고 명확하게 설정 */
+    background-color: #3a414a !important; /* TailwindCSS Gray-800 계열 */
+    
+    /* 글자색을 밝게 설정하여 대비 확보 */
+    color: #e5e7eb !important; /* TailwindCSS Gray-200 계열 */
+    
+    /* (선택 사항) 좌측 테두리 색상도 조정 */
+    border-left-color: #b0b1b4 !important; /* 파란색 계열 */
+    
+    /* 인용구 내부의 링크(a 태그) 색상도 조정하여 대비 확보 */
+    blockquote a {
+      color: #93c5fd !important; /* 밝은 파란색 계열 */
+    }
+  }
 }
 
-/* ⭐️ 충돌 방지를 위해 body에 !important를 사용하여 CSS 변수가 항상 적용되도록 합니다. ⭐️ */
+
+/* 충돌 방지를 위해 body에 !important를 사용하여 CSS 변수가 항상 적용되도록 합니다. */
 body {
   background: var(--background) !important; 
   color: var(--foreground) !important; 
@@ -91,4 +117,35 @@ body {
 /* Link Hover Effect (컴포넌트 내에서 적용되므로 전역은 최소화) */
 a {
     transition: color 0.2s ease;
+}
+
+@layer components {
+  .prose :where(table):not(:where(.not-prose *)) {
+    width: 100%;
+    border-collapse: collapse;                 /* 셀 사이 간격 제거 */
+    border: 1px solid rgb(228 228 231);        /* zinc-200 */
+    border-radius: 0.375rem;                   /* 살짝 둥글게 (선택) */
+    overflow: hidden;                          /* 둥근 모서리 유지 */
+  }
+
+  .prose :where(th, td):not(:where(.not-prose *)) {
+    border: 1px solid rgb(228 228 231);        /* 셀 보더 */
+    padding: 0.6rem 0.8rem;                    /* 가독성 패딩 */
+  }
+
+  .prose :where(thead th):not(:where(.not-prose *)) {
+    background-color: rgb(244 244 245);        /* zinc-100 */
+    font-weight: 600;
+  }
+
+  /* 다크 모드 색상 */
+  .dark .prose :where(table):not(:where(.not-prose *)) {
+    border-color: rgb(63 63 70);               /* zinc-700 */
+  }
+  .dark .prose :where(th, td):not(:where(.not-prose *)) {
+    border-color: rgb(63 63 70);
+  }
+  .dark .prose :where(thead th):not(:where(.not-prose *)) {
+    background-color: rgb(39 39 42);           /* zinc-900 근처 */
+  }
 }

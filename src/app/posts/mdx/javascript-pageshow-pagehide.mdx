@@ -1,11 +1,9 @@
 ---
 title: "Web API - pageshow/pagehide event와 BFCache"
 date: "2021-12-20T16:14:00+09:00"
-tags: ["JavaScript", "Frontend", "WebAPI", "Browser"]
+tags: ["frontend"]
 slug: "javascript-pageshow-pagehide"
 ---
-
-> Web API (pageshow/pagehide event)
 
 뒤로가기시에 브라우저별로 실행이 안되는 경우가 발생하였다.  
 일부 브라우저에서 뒤로가기 시 화면이 re-render가 되지 않는 이유는 무엇일까?  
@@ -35,5 +33,5 @@ window.onpageshow = function (event) {
 ```
 콜백으로 넘겨지는 event파라메터의 속성 중 persisted가 true인 경우, BFCache로 부터 복원된 상태, 즉 뒤로가기 등으로 재진입한 상태임을 알수 있어 조금 더 정밀한 컨트롤이 가능하다.  
 
-
-### 출처: [https://programmingsummaries.tistory.com/380](https://programmingsummaries.tistory.com/380) [감성 프로그래밍]
+## 참고 자료
+ - [https://programmingsummaries.tistory.com/380](https://programmingsummaries.tistory.com/380) [감성 프로그래밍]

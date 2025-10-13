@@ -1,11 +1,9 @@
 ---
 title: "JPA - Cascade (영속성 전이)"
 date: "2021-11-02T09:04:00+09:00"
-tags: ["JPA", "Backend", "Mapping"]
+tags: ["orm"]
 slug: "jpa-cascade-type"
 ---
-
-> CASCADE
 
 부모 엔티티가 영속화될 때 자식 엔티티도 같이 영속화되고, 부모 엔티티가 삭제될 때 자식 엔티티도 삭제되는 등 특정 엔티티를 영속 상태로 만들 때 연관된 엔티티도 함께 영속 상태로 전이되는 것을 의미합니다.  
 즉, 특정 엔티티에 대해 특정한 작업을 수행하면 관련된 엔티티에도 동일한 작업을 수행한다는 의미입니다.  
@@ -32,5 +30,6 @@ slug: "jpa-cascade-type"
 * CascadeType.ALL
     * 모든 Cascade 적용
 
-### 출처: [https://zzang9ha.tistory.com/350](https://zzang9ha.tistory.com/350) [IT Blog]    
-### 출처: [https://prohannah.tistory.com/132](https://prohannah.tistory.com/132) [Hello, Hannah!]
+## 참고 자료
+ - [https://zzang9ha.tistory.com/350](https://zzang9ha.tistory.com/350) [IT Blog]    
+ - [https://prohannah.tistory.com/132](https://prohannah.tistory.com/132) [Hello, Hannah!]
