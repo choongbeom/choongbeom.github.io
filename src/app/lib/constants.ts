@@ -22,7 +22,13 @@ export const CATEGORY_COLOR_MAP: { [key: string]: string } = {
 
     // 모바일
     'flutter': 'teal',        
-    'dart': 'cyan',           
+    'dart': 'cyan',    
+    
+    //학습
+    'cs': 'green',
+    'network': 'sky',
+    'osi': 'brown',
+    'tcp/ip': 'stone',
 
     // 메타 및 기타
     'ai': 'fuchsia',
