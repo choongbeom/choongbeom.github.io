@@ -4,36 +4,38 @@
 // 이 맵은 블로그 전반(홈, 포스트 목록, 포스트 카드 등)에서 사용됩니다.
 export const CATEGORY_COLOR_MAP: { [key: string]: string } = {
     // 백엔드/프론트엔드
-    'backend': 'indigo',
-    'frontend': 'pink',       
+    'backend': 'blue',
+    'frontend': 'sky',       
     'database': 'cyan',
     
     // 개발 환경 및 인프라
-    'github': 'purple',
-    'devops': 'blue',
-    'swagger': 'violet',
+    'github': 'indigo',
+    'devops': 'violet',
+    'swagger': 'green',
     
     // 언어 및 프레임워크
-    'c-language': 'red',
-    'java': 'orange',         
-    'spring': 'emerald',      
-    'javascript': 'green',
-    'orm': 'amber',           
+    'c-language': 'emerald',
+    'java': 'teal',         
+    'spring': 'lime',      
+    'javascript': 'red',
+    'orm': 'rose',           
 
     // 모바일
-    'flutter': 'teal',        
-    'dart': 'cyan',    
+    'flutter': 'pink',        
+    'dart': 'fuchsia',    
     
     //학습
-    'cs': 'green',
-    'network': 'sky',
-    'osi': 'brown',
-    'tcp/ip': 'stone',
+    'cs': 'purple',
+    'network': 'orange',
+    'osi': 'amber',
+    'tcp/ip': 'yellow',
+    'sorting': 'brown',
+    'algorithm': 'slate',
 
     // 메타 및 기타
-    'ai': 'fuchsia',
-    'retrospective': 'yellow',
-    'profile': 'lime',        
+    'ai': 'zinc',
+    'retrospective': 'neutral',
+    'profile': 'stone',        
     'etc': 'gray',
 };
 
