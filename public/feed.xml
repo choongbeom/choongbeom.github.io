@@ -4,7 +4,7 @@
         <title>Choongbeom.dev | 시스템 엔지니어링 &amp; 개발 성장 블로그</title>
         <link>https://choongbeom.github.io</link>
         <description>기술 블로그 RSS 피드</description>
-        <lastBuildDate>Thu, 23 Oct 2025 00:13:07 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Oct 2025 00:16:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
@@ -137,7 +137,7 @@
             <category>orm</category>
         </item>
         <item>
-            <title><![CDATA[jpa-elementcollection]]></title>
+            <title><![CDATA[jpa-elementcollection.mdx]]></title>
             <link>https://choongbeom.github.io/posts/jpa-elementcollection</link>
             <guid isPermaLink="false">https://choongbeom.github.io/posts/jpa-elementcollection</guid>
             <pubDate>Tue, 02 Nov 2021 08:04:00 GMT</pubDate>
@@ -202,8 +202,8 @@
         </item>
         <item>
             <title><![CDATA[C/C++ 개발 회고록]]></title>
-            <link>https://choongbeom.github.io/posts/cpp-retrospective</link>
-            <guid isPermaLink="false">https://choongbeom.github.io/posts/cpp-retrospective</guid>
+            <link>https://choongbeom.github.io/posts/c-language-retrospective</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/c-language-retrospective</guid>
             <pubDate>Tue, 26 Oct 2021 00:31:00 GMT</pubDate>
             <category>c-language</category>
             <category>retrospective</category>
