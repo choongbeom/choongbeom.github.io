@@ -51,7 +51,16 @@ export const metadata: Metadata = {
 
   // 6. 기본 언어 및 기본 URL
   metadataBase: new URL('https://choongbeom.github.io'),
+
+   // 7. RSS 피드 (Feed XML 링크 추가)
+   alternates: {
+    types: {
+      'application/rss+xml': '/feed.xml',
+    },
+  },
 };
+
+<meta name="google-site-verification" content="eVKJilBO5q7gD1kSNiVWbx3V-okaGJjwLIx9l16X-ds" />
 
 
 export default function RootLayout({

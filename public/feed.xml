@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Choongbeom.dev | 시스템 엔지니어링 &amp; 개발 성장 블로그</title>
+        <link>https://choongbeom.github.io</link>
+        <description>기술 블로그 RSS 피드</description>
+        <lastBuildDate>Thu, 23 Oct 2025 00:13:07 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ko</language>
+        <copyright>© 2025 Choongbeom Kim. All rights reserved.</copyright>
+        <atom:link href="https://choongbeom.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[정렬 알고리즘, 이론으로 배우고 실무로 이해하기]]></title>
+            <link>https://choongbeom.github.io/posts/sorting-algorithm-theory-practice</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/sorting-algorithm-theory-practice</guid>
+            <pubDate>Wed, 22 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[정렬 알고리즘의 이론부터 실무, 그리고 코딩테스트 적용까지 — 정렬의 본질을 이해하고 활용하는 방법]]></description>
+            <category>sorting</category>
+            <category>algorithm</category>
+        </item>
+        <item>
+            <title><![CDATA[웹 통신 구조로 이해하는 OSI 7계층과 TCP/IP 네트워크 실무]]></title>
+            <link>https://choongbeom.github.io/posts/web-osi-tcpip</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/web-osi-tcpip</guid>
+            <pubDate>Wed, 15 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[웹 개발, 보안, AI 서비스까지 — OSI 7계층을 실무 관점에서 다시 바라보다.]]></description>
+            <category>CS</category>
+            <category>network</category>
+            <category>OSI</category>
+            <category>TCP/IP</category>
+        </item>
+        <item>
+            <title><![CDATA[Next.js로 블로그를 새롭게 구축하며 느낀 점 — AI와 함께한 이전기]]></title>
+            <link>https://choongbeom.github.io/posts/nextjs-blog-migration-ai</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/nextjs-blog-migration-ai</guid>
+            <pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate>
+            <category>frontend</category>
+            <category>ai</category>
+        </item>
+        <item>
+            <title><![CDATA[프로필 정보]]></title>
+            <link>https://choongbeom.github.io/posts/profile</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/profile</guid>
+            <pubDate>Mon, 24 Mar 2025 15:00:00 GMT</pubDate>
+            <category>profile</category>
+        </item>
+        <item>
+            <title><![CDATA[React.js Life Cycle]]></title>
+            <link>https://choongbeom.github.io/posts/react-lifecycle</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/react-lifecycle</guid>
+            <pubDate>Wed, 13 Jul 2022 15:00:00 GMT</pubDate>
+            <category>frontend</category>
+        </item>
+        <item>
+            <title><![CDATA[Vue.js Chart (차트)]]></title>
+            <link>https://choongbeom.github.io/posts/vue-chart</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/vue-chart</guid>
+            <pubDate>Wed, 15 Jun 2022 15:00:00 GMT</pubDate>
+            <category>frontend</category>
+        </item>
+        <item>
+            <title><![CDATA[AWS 서버 구축 (EC2, CodePipeline, RDS)]]></title>
+            <link>https://choongbeom.github.io/posts/aws-server-setup</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/aws-server-setup</guid>
+            <pubDate>Fri, 10 Jun 2022 04:14:00 GMT</pubDate>
+            <category>devops</category>
+        </item>
+        <item>
+            <title><![CDATA[Json to Model Class]]></title>
+            <link>https://choongbeom.github.io/posts/json-to-model-class</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/json-to-model-class</guid>
+            <pubDate>Tue, 15 Feb 2022 07:14:00 GMT</pubDate>
+            <category>etc</category>
+        </item>
+        <item>
+            <title><![CDATA[Fullter Stateful Widget Lifecycle(생명주기)]]></title>
+            <link>https://choongbeom.github.io/posts/flutter-lifecycle</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/flutter-lifecycle</guid>
+            <pubDate>Tue, 15 Feb 2022 02:00:00 GMT</pubDate>
+            <category>flutter</category>
+        </item>
+        <item>
+            <title><![CDATA[Flutter 프로젝트 구조와 앱 구조]]></title>
+            <link>https://choongbeom.github.io/posts/flutter-project-structure</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/flutter-project-structure</guid>
+            <pubDate>Tue, 15 Feb 2022 00:00:00 GMT</pubDate>
+            <category>flutter</category>
+        </item>
+        <item>
+            <title><![CDATA[Github Merge]]></title>
+            <link>https://choongbeom.github.io/posts/github-merge</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/github-merge</guid>
+            <pubDate>Mon, 27 Dec 2021 01:30:00 GMT</pubDate>
+            <category>github</category>
+        </item>
+        <item>
+            <title><![CDATA[JPA - 프록시, 즉시로딩, 지연로딩]]></title>
+            <link>https://choongbeom.github.io/posts/jpa-proxy-lazy-eager-loading</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/jpa-proxy-lazy-eager-loading</guid>
+            <pubDate>Wed, 22 Dec 2021 23:04:00 GMT</pubDate>
+            <category>orm</category>
+        </item>
+        <item>
+            <title><![CDATA[Web API - pageshow/pagehide event와 BFCache]]></title>
+            <link>https://choongbeom.github.io/posts/javascript-pageshow-pagehide</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/javascript-pageshow-pagehide</guid>
+            <pubDate>Mon, 20 Dec 2021 07:14:00 GMT</pubDate>
+            <category>frontend</category>
+        </item>
+        <item>
+            <title><![CDATA[Swagger와 Spring REST Docs 통합]]></title>
+            <link>https://choongbeom.github.io/posts/swagger-restdocs-integration</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/swagger-restdocs-integration</guid>
+            <pubDate>Mon, 20 Dec 2021 07:14:00 GMT</pubDate>
+            <category>swagger</category>
+        </item>
+        <item>
+            <title><![CDATA[Vue.js Life Cycle]]></title>
+            <link>https://choongbeom.github.io/posts/vue-lifecycle</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/vue-lifecycle</guid>
+            <pubDate>Sun, 19 Dec 2021 15:00:00 GMT</pubDate>
+            <category>frontend</category>
+        </item>
+        <item>
+            <title><![CDATA[Querydsl - CaseBuilder와 Expressions]]></title>
+            <link>https://choongbeom.github.io/posts/querydsl-casebuilder-expressions</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/querydsl-casebuilder-expressions</guid>
+            <pubDate>Tue, 09 Nov 2021 04:04:00 GMT</pubDate>
+            <category>orm</category>
+        </item>
+        <item>
+            <title><![CDATA[Querydsl - ExpressionUtils]]></title>
+            <link>https://choongbeom.github.io/posts/querydsl-expression-utils</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/querydsl-expression-utils</guid>
+            <pubDate>Mon, 08 Nov 2021 15:00:00 GMT</pubDate>
+            <category>orm</category>
+        </item>
+        <item>
+            <title><![CDATA[jpa-elementcollection]]></title>
+            <link>https://choongbeom.github.io/posts/jpa-elementcollection</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/jpa-elementcollection</guid>
+            <pubDate>Tue, 02 Nov 2021 08:04:00 GMT</pubDate>
+            <category>orm</category>
+        </item>
+        <item>
+            <title><![CDATA[JPA - Entity, EntityManager, EntityManagerFactory]]></title>
+            <link>https://choongbeom.github.io/posts/jpa-entity-manager-concepts</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/jpa-entity-manager-concepts</guid>
+            <pubDate>Tue, 02 Nov 2021 05:04:00 GMT</pubDate>
+            <description><![CDATA[Entity와 EntityManager와 EntityManagerFactory의 개념과 동작 원리를 알아봅니다.]]></description>
+            <category>orm</category>
+        </item>
+        <item>
+            <title><![CDATA[JPA - 연관관계 매핑]]></title>
+            <link>https://choongbeom.github.io/posts/jpa-association-mapping</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/jpa-association-mapping</guid>
+            <pubDate>Tue, 02 Nov 2021 01:04:00 GMT</pubDate>
+            <category>orm</category>
+        </item>
+        <item>
+            <title><![CDATA[JPA - Cascade (영속성 전이)]]></title>
+            <link>https://choongbeom.github.io/posts/jpa-cascade-type</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/jpa-cascade-type</guid>
+            <pubDate>Tue, 02 Nov 2021 00:04:00 GMT</pubDate>
+            <category>orm</category>
+        </item>
+        <item>
+            <title><![CDATA[Java Collection Framework (JCF)]]></title>
+            <link>https://choongbeom.github.io/posts/java-collection-framework</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/java-collection-framework</guid>
+            <pubDate>Fri, 29 Oct 2021 02:39:00 GMT</pubDate>
+            <category>java</category>
+        </item>
+        <item>
+            <title><![CDATA[OSIV (Open Session/Entity Manager In View)]]></title>
+            <link>https://choongbeom.github.io/posts/jpa-osiv-concept</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/jpa-osiv-concept</guid>
+            <pubDate>Thu, 28 Oct 2021 02:04:00 GMT</pubDate>
+            <category>orm</category>
+        </item>
+        <item>
+            <title><![CDATA[SQL - DDL]]></title>
+            <link>https://choongbeom.github.io/posts/sql-ddl</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/sql-ddl</guid>
+            <pubDate>Thu, 28 Oct 2021 00:20:00 GMT</pubDate>
+            <category>database</category>
+        </item>
+        <item>
+            <title><![CDATA[Github Branch]]></title>
+            <link>https://choongbeom.github.io/posts/github-branch</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/github-branch</guid>
+            <pubDate>Tue, 26 Oct 2021 01:30:00 GMT</pubDate>
+            <category>github</category>
+        </item>
+        <item>
+            <title><![CDATA[Github 업로드]]></title>
+            <link>https://choongbeom.github.io/posts/github-upload-commands</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/github-upload-commands</guid>
+            <pubDate>Tue, 26 Oct 2021 00:39:00 GMT</pubDate>
+            <category>github</category>
+        </item>
+        <item>
+            <title><![CDATA[C/C++ 개발 회고록]]></title>
+            <link>https://choongbeom.github.io/posts/cpp-retrospective</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/cpp-retrospective</guid>
+            <pubDate>Tue, 26 Oct 2021 00:31:00 GMT</pubDate>
+            <category>c-language</category>
+            <category>retrospective</category>
+        </item>
+        <item>
+            <title><![CDATA[Github]]></title>
+            <link>https://choongbeom.github.io/posts/github</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/github</guid>
+            <pubDate>Mon, 25 Oct 2021 23:39:00 GMT</pubDate>
+            <category>github</category>
+        </item>
+    </channel>
+</rss>
