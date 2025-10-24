@@ -50,7 +50,7 @@ export function Header() {
 
   return (
     <header
-      className="sticky top-0 z-50 border-b shadow-sm relative overflow-x-clip"
+      className="sticky top-0 z-50 border-b shadow-sm overflow-x-clip"
       style={{
         backgroundColor: 'var(--header-bg)',
         borderColor: 'var(--comp-border)',

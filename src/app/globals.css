@@ -104,18 +104,22 @@ html.dark {
 html, body {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: var(--font-noto), var(--font-inter),
-               system-ui, -apple-system, Segoe UI, Roboto,
+  overflow-x: hidden;
+}
+
+/* font-sans를 라틴 → 한글 순으로 재정의 */
+@theme {
+  --font-sans: var(--font-latin), var(--font-korean),
+               ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
                "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
                "Helvetica Neue", Arial, sans-serif;
-  overflow-x: hidden;
 }
 
 /* 충돌 방지를 위해 body에 !important를 사용하여 CSS 변수가 항상 적용되도록 합니다. */
 body {
   background: var(--background) !important; 
   color: var(--foreground) !important; 
-
+  font-family: var(--font-sans);
   /* 부드러운 스크롤 */
   scroll-behavior: smooth;
   /* 모드 전환 애니메이션 */
