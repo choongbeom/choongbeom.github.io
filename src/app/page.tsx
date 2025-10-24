@@ -48,8 +48,9 @@ export default async function HomePage() {
           <span className="mr-3" style={{ color: 'var(--text-sub)' }}>Device</span>
           Integration
         </h1>
-        <p 
-          className="text-lg md:text-2xl max-w-2xl"
+        <p
+          className="mt-2 font-medium leading-relaxed
+                    text-[clamp(12px,3vw,26px)]"
           style={{ color: 'var(--text-sub)' }}
         >
           Engineering, Projects, and Growth Stories
