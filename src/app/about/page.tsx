@@ -53,7 +53,7 @@ export default function AboutPage() {
                 </div>
                 <div className="p-3 rounded-lg" style={{ backgroundColor: 'var(--comp-bg)' }}>
                     <p className="font-bold text-sm" style={{ color: 'var(--accent-color)' }}>보조 언어</p>
-                    <p>Java, Python</p>
+                    <p>Java, JavaScript</p>
                 </div>
                 <div className="p-3 rounded-lg" style={{ backgroundColor: 'var(--comp-bg)' }}>
                     <p className="font-bold text-sm" style={{ color: 'var(--accent-color)' }}>프레임워크</p>
@@ -122,8 +122,18 @@ export default function AboutPage() {
                 color: 'var(--text-sub)'
             }}
         >
-            <p>Email: toonme1@gmail.com / toonme@nate.com</p>
-            <p>KakaoTalk: toonme</p>
+            <p>
+            Email: <a href="mailto:toonme1@gmail.com" className="hover:underline" style={{ color: 'var(--accent-color)' }}>toonme1@gmail.com</a> / <a href="mailto:toonme@nate.com" className="hover:underline" style={{ color: 'var(--accent-color)' }}>toonme@nate.com</a>
+            </p>
+            <p>
+            KakaoTalk:&nbsp;
+            <a
+                href="kakaotalk://con/chat/toonme"
+                className="text-[var(--accent-color)] hover:underline"
+            >
+                toonme
+            </a>
+            </p>
             <p>Blog: <a href="https://choongbeom.github.io" className="hover:underline" style={{ color: 'var(--accent-color)' }}>choongbeom.github.io</a></p>
             <p>GitHub: <a href="https://github.com/choongbeom" className="hover:underline" style={{ color: 'var(--accent-color)' }}>github.com/choongbeom</a></p>
         </div>
