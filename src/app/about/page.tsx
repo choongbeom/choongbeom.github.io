@@ -125,15 +125,6 @@ export default function AboutPage() {
             <p>
             Email: <a href="mailto:toonme1@gmail.com" className="hover:underline" style={{ color: 'var(--accent-color)' }}>toonme1@gmail.com</a> / <a href="mailto:toonme@nate.com" className="hover:underline" style={{ color: 'var(--accent-color)' }}>toonme@nate.com</a>
             </p>
-            <p>
-            KakaoTalk:&nbsp;
-            <a
-                href="kakaotalk://con/chat/toonme"
-                className="text-[var(--accent-color)] hover:underline"
-            >
-                toonme
-            </a>
-            </p>
             <p>Blog: <a href="https://choongbeom.github.io" className="hover:underline" style={{ color: 'var(--accent-color)' }}>choongbeom.github.io</a></p>
             <p>GitHub: <a href="https://github.com/choongbeom" className="hover:underline" style={{ color: 'var(--accent-color)' }}>github.com/choongbeom</a></p>
         </div>
