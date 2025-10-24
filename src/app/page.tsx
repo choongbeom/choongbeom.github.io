@@ -36,7 +36,7 @@ export default async function HomePage() {
       <h1
           className="
             font-extrabold mb-4 leading-tight tracking-tight
-            text-[clamp(28px,8vw,44px)]    /* 화면에 맞게 유연하게 */
+            text-[clamp(28px,8vw,72px)]    /* 화면에 맞게 유연하게 */
             break-words break-keep         /* 긴 영문/한글 모두 안전 줄바꿈 */
           "
           style={{ hyphens: 'auto' }}      /* 단어 분할 허용(브라우저 지원 시) */

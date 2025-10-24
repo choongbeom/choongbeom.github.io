@@ -3,6 +3,7 @@ import { Providers } from './providers'; // Providers 임포트
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import type { Metadata } from 'next';
+import { Noto_Sans, Noto_Sans_KR } from "next/font/google";
 import './globals.css'; 
 
 export const metadata: Metadata = {
@@ -62,6 +63,19 @@ export const metadata: Metadata = {
 
 <meta name="google-site-verification" content="eVKJilBO5q7gD1kSNiVWbx3V-okaGJjwLIx9l16X-ds" />
 
+const notoLatin = Noto_Sans({
+  subsets: ["latin"],
+  weight: ["400","500","700", "900"],
+  variable: "--font-latin",
+  display: "swap",
+});
+
+const notoKR = Noto_Sans_KR({
+  weight: ["400","500","700"],
+  variable: "--font-korean",
+  display: "swap",
+  preload: false,
+});
 
 export default function RootLayout({
   children,
@@ -69,7 +83,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" suppressHydrationWarning> 
+    <html lang="ko" className={`${notoLatin.variable} ${notoKR.variable}`} suppressHydrationWarning> 
       <body>
         <Providers>
           {/* 색상 클래스 제거: body 스타일이 전역 배경을 제어합니다. */}
