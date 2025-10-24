@@ -29,13 +29,17 @@ export default async function HomePage() {
   }));
 
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12 md:py-24">
+    <main className="max-w-4xl mx-auto px-4 py-12 md:py-24 w-full overflow-x-clip">
 
       {/* 1. Hero Section (모바일/데스크톱 반응형 타이포그래피) */}
       <section className="mb-20">
-        <h1 
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-snug lg:leading-tight"
-          // 배경색이 body에서 제어되므로, 일반 텍스트는 body의 --foreground를 상속받습니다.
+      <h1
+          className="
+            font-extrabold mb-4 leading-tight tracking-tight
+            text-[clamp(28px,8vw,44px)]    /* 화면에 맞게 유연하게 */
+            break-words break-keep         /* 긴 영문/한글 모두 안전 줄바꿈 */
+          "
+          style={{ hyphens: 'auto' }}      /* 단어 분할 허용(브라우저 지원 시) */
         >
           <span className="mr-3" style={{ color: 'var(--accent-color)' }}>Windows</span>
           Application

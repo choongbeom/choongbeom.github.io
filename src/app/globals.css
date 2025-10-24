@@ -5,7 +5,6 @@
 /* ---------------------------------------------------- */
 /* CSS 변수 정의 (Next-themes가 <html> 클래스를 토글하여 변수를 변경함) */
 /* ---------------------------------------------------- */
-
 :root {
   /* 라이트 모드 (기본값) */
   --background: #ffffff;         /* 배경색: 순백색 */
@@ -102,16 +101,29 @@ html.dark {
   }
 }
 
+html, body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: var(--font-noto), var(--font-inter),
+               system-ui, -apple-system, Segoe UI, Roboto,
+               "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+               "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+}
 
 /* 충돌 방지를 위해 body에 !important를 사용하여 CSS 변수가 항상 적용되도록 합니다. */
 body {
   background: var(--background) !important; 
   color: var(--foreground) !important; 
-  font-family: 'Inter', sans-serif; /* 모던 폰트 적용 (Tailwind 기본 폰트) */
+
   /* 부드러운 스크롤 */
   scroll-behavior: smooth;
   /* 모드 전환 애니메이션 */
   transition: background-color 0.3s ease, color 0.3s ease;
+  
+  overscroll-behavior-y: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Link Hover Effect (컴포넌트 내에서 적용되므로 전역은 최소화) */
