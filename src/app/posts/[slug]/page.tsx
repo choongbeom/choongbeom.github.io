@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {
         title: title,
         description: description,
+        alternates: { canonical: `https://choongbeom.github.io/posts/${slug}` },
         // Open Graph 및 Twitter 카드 설정 (선택 사항이지만 권장)
         openGraph: {
             title: title,

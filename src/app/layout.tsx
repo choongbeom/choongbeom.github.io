@@ -6,6 +6,7 @@ import type { Metadata } from 'next';
 import { Noto_Sans, Noto_Sans_KR } from "next/font/google";
 import './globals.css'; 
 
+
 export const metadata: Metadata = {
   // 1. 페이지 제목 — 검색 및 SNS 공유 시 대표 제목
   title: 'Choongbeom.dev | 시스템 엔지니어링 & 개발 성장 블로그',
@@ -55,6 +56,7 @@ export const metadata: Metadata = {
 
    // 7. RSS 피드 (Feed XML 링크 추가)
    alternates: {
+    canonical: "/",
     types: {
       'application/rss+xml': '/feed.xml',
     },
@@ -65,13 +67,13 @@ export const metadata: Metadata = {
 
 const notoLatin = Noto_Sans({
   subsets: ["latin"],
-  weight: ["400","500","700", "900"],
+  weight: ["300", "400","500", "600", "700", "900"],
   variable: "--font-latin",
   display: "swap",
 });
 
 const notoKR = Noto_Sans_KR({
-  weight: ["400","500","700"],
+  weight: ["300", "400","500", "600", "700", "900"],
   variable: "--font-korean",
   display: "swap",
   preload: false,
