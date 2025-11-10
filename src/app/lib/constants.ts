@@ -34,11 +34,12 @@ export const CATEGORY_COLOR_MAP: { [key: string]: string } = {
 
     'stl': 'blue',
     'container': 'sky',
+    '기획': 'cyan',        
 
     // 메타 및 기타
     'ai': 'zinc',
     'retrospective': 'neutral',
-    'profile': 'stone',        
+    'profile': 'stone',      
     'etc': 'gray',
 };
 

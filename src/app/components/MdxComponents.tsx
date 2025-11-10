@@ -84,7 +84,7 @@ const AlertWrapper: React.FC<ComponentProps> = (props) => {
 export const MDXCustomComponents: Record<string, React.ComponentType<ComponentProps>> = {
     // 기존 HTML 요소 오버라이드 (스타일링 유지)
     h1: (props: ComponentProps) => <h1 className="text-4xl md:text-5xl font-extrabold mb-8 border-l-4 pl-3" style={{ color: 'var(--text-main)', borderColor: 'var(--accent-color)' }} {...props} />,
-    h2: (props: ComponentProps) => <h2 className="text-3xl md:text-4xl font-extrabold mt-10 mb-6 border-l-4 pl-3" style={{ color: 'var(--text-main)', borderColor: 'var(--accent-color)' }} {...props} />,
+    h2: (props: ComponentProps) => <h2 className="text-3xl md:text-3xl font-extrabold mt-10 mb-6 border-l-4 pl-3" style={{ color: 'var(--text-main)', borderColor: 'var(--accent-color)' }} {...props} />,
     h3: (props: ComponentProps) => <h3 className="text-xl md:text-2xl font-semibold mt-6 mb-3" style={{ color: 'var(--text-main)' }} {...props} />,
     p: (props: ComponentProps) => <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-main)' }} {...props} />,
     a: (props: ComponentProps) => <a className="underline font-medium hover:text-indigo-500 transition-colors" style={{ color: 'var(--accent-color)' }} {...props} />,
