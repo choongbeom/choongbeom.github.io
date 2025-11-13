@@ -107,6 +107,10 @@ html, body {
   overflow-x: hidden;
 }
 
+blockquote p {
+  margin: 0;
+}
+
 /* font-sans를 라틴 → 한글 순으로 재정의 */
 @theme {
   --font-sans: var(--font-latin), var(--font-korean),
