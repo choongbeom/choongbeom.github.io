@@ -149,6 +149,11 @@ export default async function PostPage({ params }: PageProps) {
                 <DynamicMdxWrapper 
                     mdxSource={mdxSource}
                 />
+
+                <div className="text-sm text-gray-500 dark:text-gray-400 mt-22 mb-5">
+                    <p>이 블로그의 내용은 자유롭게 활용하셔도 됩니다.<br/>
+                    다만, 가능하다면 출처(https://choongbeom.github.io)를 함께 남겨주세요.</p>
+                </div>
             </article>
 
             <GiscusComments />
