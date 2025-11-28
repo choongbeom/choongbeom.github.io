@@ -34,8 +34,8 @@ export const CATEGORY_COLOR_MAP: { [key: string]: string } = {
 
     'stl': 'blue',
     'container': 'sky',
-    '기획': 'cyan',   
-    '리더십': 'indigo',   
+    'planning': 'cyan',   
+    'leadership': 'indigo',   
 
     'http': 'violet',   
     'rest': 'green',   
