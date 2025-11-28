@@ -4,12 +4,49 @@
         <title>Choongbeom.dev | 시스템 엔지니어링 &amp; 개발 성장 블로그</title>
         <link>https://choongbeom.github.io</link>
         <description>기술 블로그 RSS 피드</description>
-        <lastBuildDate>Thu, 23 Oct 2025 00:16:26 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Nov 2025 01:05:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
         <copyright>© 2025 Choongbeom Kim. All rights reserved.</copyright>
         <atom:link href="https://choongbeom.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[실무자가 반드시 알아야 할 HTTP·REST·HTTPS 내부 구조 정리]]></title>
+            <link>https://choongbeom.github.io/posts/http-rest-https-architecture</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/http-rest-https-architecture</guid>
+            <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[HTTP, REST, HTTPS의 핵심 구조를 실무자 관점에서 재정리한 글입니다.]]></description>
+            <category>CS</category>
+            <category>HTTP</category>
+            <category>REST</category>
+            <category>HTTPS</category>
+        </item>
+        <item>
+            <title><![CDATA[팀장 2년차, 내가 배운 것은 ‘사람이 아니라 시스템을 믿는 법’]]></title>
+            <link>https://choongbeom.github.io/posts/dev-manager-two-years</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/dev-manager-two-years</guid>
+            <pubDate>Thu, 13 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[준비되지 않은 상태에서 시작한 팀장 2년. 사람을 관리하는 법보다, 구조와 균형을 배우는 시간이었다.]]></description>
+            <category>리더십</category>
+        </item>
+        <item>
+            <title><![CDATA[개발자에게 기획이란: 고객의 시점으로, 판매자가 들고 나갈 수 있게]]></title>
+            <link>https://choongbeom.github.io/posts/dev-manager-ai-planning</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/dev-manager-ai-planning</guid>
+            <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[기획의 완성은 문서가 아니라, 고객의 여정과 사람의 경험 속에서 다듬어진다.]]></description>
+            <category>기획</category>
+        </item>
+        <item>
+            <title><![CDATA[C++ STL 컨테이너와 알고리즘 — 다시 시작한 기본기의 힘]]></title>
+            <link>https://choongbeom.github.io/posts/stl_algorithm_container</link>
+            <guid isPermaLink="false">https://choongbeom.github.io/posts/stl_algorithm_container</guid>
+            <pubDate>Thu, 23 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[C++ STL 컨테이너 구조와 알고리즘을 다시 학습하며 느낀 점과 변화의 이해]]></description>
+            <category>stl</category>
+            <category>algorithm</category>
+            <category>container</category>
+        </item>
         <item>
             <title><![CDATA[정렬 알고리즘, 이론으로 배우고 실무로 이해하기]]></title>
             <link>https://choongbeom.github.io/posts/sorting-algorithm-theory-practice</link>
