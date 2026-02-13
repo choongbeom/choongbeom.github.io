@@ -8,7 +8,7 @@ const GiscusComments: React.FC = () => {
     const ref = useRef<HTMLDivElement>(null);
     const { resolvedTheme } = useTheme();
 
-    const REPO = 'choongbeom/choongbeom-blog-next'; // data-repo
+    const REPO = 'choongbeom/choongbeom.github.io'; // data-repo
     const REPO_ID = 'R_kgDOP6Hmaw';                 // data-repo-id
     const CATEGORY = 'General';                     // data-category
     const CATEGORY_ID = 'DIC_kwDOP6Hma84CwIax';     // data-category-id
