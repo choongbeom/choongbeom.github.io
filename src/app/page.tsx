@@ -41,12 +41,12 @@ export default async function HomePage() {
           "
           style={{ hyphens: 'auto' }}      /* 단어 분할 허용(브라우저 지원 시) */
         >
-          <span className="mr-3" style={{ color: 'var(--accent-color)' }}>Windows</span>
-          장비와 소프트웨어를 연결하고
+          <span className="mr-3" style={{ color: 'var(--accent-color)' }}>장비와 소프트웨어</span>
+          를 연결하고
           <br />
           <span className="mr-1">&amp;</span>       
-          <span className="mr-3" style={{ color: 'var(--text-sub)' }}>Device</span>
-          제품으로 완성하는 개발자
+          <span className="mr-3" style={{ color: 'var(--text-sub)' }}>제품</span>
+          으로 완성하는 개발자
         </h1>
         <p
           className="mt-2 font-medium leading-relaxed
