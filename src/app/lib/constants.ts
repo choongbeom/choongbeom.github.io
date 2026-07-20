@@ -44,6 +44,8 @@ export const CATEGORY_COLOR_MAP: { [key: string]: string } = {
     'reading': 'teal',   
     'pdca': 'lime',   
 
+    'architecture': 'amber',   
+
     // 메타 및 기타
     'ai': 'zinc',
     'retrospective': 'neutral',

@@ -6,6 +6,20 @@ import { PostData, PostContentData } from './types';
 
 const POSTS_DIRECTORY = path.join(process.cwd(), 'src', 'app', 'posts', 'mdx');
 
+// Front matter is external data, so validate tag entries before exposing them as
+// string[]. Empty or non-string YAML values (for example `null`) must not reach
+// pages that normalize tags with string methods.
+function normalizeTags(tags: unknown): string[] {
+    if (!Array.isArray(tags)) {
+        return [];
+    }
+
+    return tags
+        .filter((tag): tag is string => typeof tag === 'string')
+        .map(tag => tag.trim())
+        .filter(tag => tag.length > 0);
+}
+
 // 슬러그(파일명) 목록을 가져옵니다.
 export function getAllPostSlugs(): string[] {
     try {
@@ -39,7 +53,7 @@ export function getPostMetadata(slug: string): PostData | undefined {
             slug,
             title: data.title || slug,
             date: dateString,
-            tags: Array.isArray(data.tags) ? data.tags : [],
+            tags: normalizeTags(data.tags),
             description,
         };
     } catch (error) {
@@ -67,7 +81,7 @@ export function getPostContent(slug: string): PostContentData {
             slug,
             title: data.title || slug,
             date: dateString,
-            tags: Array.isArray(data.tags) ? data.tags : [],
+            tags: normalizeTags(data.tags),
             description,
             content, // MDX 원본 문자열
         };
