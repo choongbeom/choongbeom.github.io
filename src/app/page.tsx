@@ -32,29 +32,59 @@ export default async function HomePage() {
     <main className="max-w-4xl mx-auto px-4 py-12 md:py-24 w-full overflow-x-clip">
 
       {/* 1. Hero Section (모바일/데스크톱 반응형 타이포그래피) */}
-      <section className="mb-20">
-      <h1
-          className="
-            font-extrabold mb-4 leading-tight tracking-tight
-            text-[clamp(28px,8vw,72px)]    /* 화면에 맞게 유연하게 */
-            break-words break-keep         /* 긴 영문/한글 모두 안전 줄바꿈 */
-          "
-          style={{ hyphens: 'auto' }}      /* 단어 분할 허용(브라우저 지원 시) */
-        >
-          <span className="mr-3" style={{ color: 'var(--accent-color)' }}>장비와 소프트웨어</span>
-          를 연결하고
-          <br />
-          <span className="mr-1">&amp;</span>       
-          <span className="mr-3" style={{ color: 'var(--text-sub)' }}>제품</span>
-          으로 완성하는 개발자
-        </h1>
+      <section className="mb-20 md:mb-24">
         <p
-          className="mt-2 font-medium leading-relaxed
-                    text-[clamp(12px,3vw,26px)]"
+          className="mb-5 text-sm md:text-base font-bold tracking-[0.18em] uppercase"
+          style={{ color: 'var(--accent-color)' }}
+        >
+          Software Engineer · Engineering Manager
+        </p>
+
+        <h1
+          className="
+            font-extrabold leading-[1.12] tracking-tight
+            text-[clamp(36px,7.5vw,68px)]
+            break-keep
+          "
+          style={{ color: 'var(--text-main)' }}
+        >
+          장비 소프트웨어에서
+          <br />
+          <span style={{ color: 'var(--accent-color)' }}>
+            AI 기반 제품 개발까지
+          </span>
+        </h1>
+
+        <p
+          className="
+            mt-7 max-w-3xl
+            text-[clamp(16px,2.3vw,22px)]
+            font-medium leading-relaxed
+          "
           style={{ color: 'var(--text-sub)' }}
         >
-          Windows Application · Device SDK · Document AI · Engineering Leadership
+          Windows 기반 장비·SDK 개발 경험을 바탕으로,
+          <br className="hidden md:block" />
+          Web/API와 AI 기술을 연결한 제품 개발 과정을 기록합니다.
         </p>
+
+        <div
+          className="
+            mt-7 flex flex-wrap gap-x-3 gap-y-2
+            text-sm md:text-base font-semibold
+          "
+          style={{ color: 'var(--text-sub)' }}
+        >
+          <span>Windows Application</span>
+          <span aria-hidden="true">·</span>
+          <span>Device SDK</span>
+          <span aria-hidden="true">·</span>
+          <span>System Integration</span>
+          <span aria-hidden="true">·</span>
+          <span>Document AI</span>
+          <span aria-hidden="true">·</span>
+          <span>Product Engineering</span>
+        </div>
       </section>
 
       {/* 2. Latest Posts Section */}
