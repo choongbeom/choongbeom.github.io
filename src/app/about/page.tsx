@@ -55,7 +55,7 @@ export default function AboutPage() {
   const projects = [
     {
       title: 'VOIM Image System · AI 문서처리 제품 개발',
-      period: '2025~현재',
+      period: '2026~현재',
       description:
         '상용 Document AI를 활용한 문서 분류·추출·마스킹·검토·확정 처리 제품을 설계하고 구현했습니다. Web/API/Worker 기반 중앙 플랫폼과 Windows Scanner Agent를 연결하고, 개인정보 보호·보관 정책·배포·운영 구조 및 내부 POC 리허설까지 수행했습니다.',
       scope:
