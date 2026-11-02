@@ -45,6 +45,7 @@ export const CATEGORY_COLOR_MAP: { [key: string]: string } = {
     'pdca': 'lime',   
 
     'architecture': 'amber',   
+    'development': 'yellow',
 
     // 메타 및 기타
     'ai': 'zinc',
